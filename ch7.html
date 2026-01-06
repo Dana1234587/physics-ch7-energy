@@ -510,6 +510,26 @@
                         <h4>⚠️ SI Unit of Work:</h4>
                         <p><strong>1 Joule (J) = 1 Newton·meter (N·m) = 1 kg·m²/s²</strong></p>
                     </div>
+
+                    <div class="note" style="background: #fff3cd; border-left: 4px solid #ffc107;">
+                        <h4>⚠️ Common Misconception:</h4>
+                        <p><strong>"Any force does work on an object."</strong></p>
+                        <p>❌ FALSE! A force only does work if there is displacement AND the force has a component along
+                            the displacement direction.</p>
+                        <p>Example: When you hold a heavy box stationary, you exert force but do ZERO work (no
+                            displacement). When you carry it horizontally, your upward force still does zero work
+                            (perpendicular to motion)!</p>
+                    </div>
+
+                    <div class="key-point" style="background: #e8f5e9;">
+                        <h4>🧠 Quick Check:</h4>
+                        <p>A person pushes against a wall with 200 N for 10 seconds. How much work is done?</p>
+                        <button onclick="toggleSolution('qc1')">Show Answer</button>
+                        <div id="qc1" class="solution">
+                            <strong>W = 0 J</strong> — No displacement means no work, regardless of how much force is
+                            applied or for how long!
+                        </div>
+                    </div>
                 </div>
 
                 <div class="subsection">
@@ -560,6 +580,25 @@
                             <td>Force directly opposes motion</td>
                         </tr>
                     </table>
+                </div>
+
+                <div class="subsection">
+                    <h3>📐 Free Body Diagrams for Work Problems</h3>
+                    <p>Correctly drawing force diagrams is essential for work calculations:</p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 20px 0;">
+                        <div style="text-align: center;">
+                            <img src="images/incline_fbd.png" alt="Box on Incline FBD"
+                                style="max-width: 300px; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            <p style="color: #666; margin-top: 10px;"><strong>Box on Incline:</strong><br>N
+                                perpendicular to surface, mg straight down</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <img src="images/box_pull_fbd.png" alt="Pulling a Box FBD"
+                                style="max-width: 300px; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                            <p style="color: #666; margin-top: 10px;"><strong>Pulling a Box:</strong><br>F along rope
+                                direction, N upward</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="example">
@@ -1042,6 +1081,28 @@
                             <li><strong>Zero Net Work (\(W_{\text{net}} = 0\))</strong>: No change in speed</li>
                         </ul>
                     </div>
+
+                    <div class="note" style="background: #fff3cd; border-left: 4px solid #ffc107;">
+                        <h4>⚠️ Common Misconception:</h4>
+                        <p><strong>"Doubling the speed doubles the kinetic energy."</strong></p>
+                        <p>❌ FALSE! Since \(K = \frac{1}{2}mv^2\), kinetic energy depends on \(v^2\). Doubling speed
+                            <strong>quadruples</strong> the KE!
+                        </p>
+                        <p>This is why car crashes at high speeds are so much more dangerous: a car at 60 mph has
+                            <strong>4 times</strong> the KE of a car at 30 mph.
+                        </p>
+                    </div>
+
+                    <div class="key-point" style="background: #e8f5e9;">
+                        <h4>🧠 Quick Check:</h4>
+                        <p>A 2 kg ball moving at 3 m/s has its speed increased to 6 m/s. By what factor did its KE
+                            increase?</p>
+                        <button onclick="toggleSolution('qc2')">Show Answer</button>
+                        <div id="qc2" class="solution">
+                            <strong>Factor of 4</strong> — Speed doubled (×2), so KE increased by 2² = 4. (From 9 J to
+                            36 J)
+                        </div>
+                    </div>
                 </div>
 
                 <div class="example">
@@ -1226,6 +1287,26 @@
                     <p>Work depends on the path taken. Mechanical energy is often converted to internal energy (heat).
                     </p>
                     <p><strong>Examples:</strong> Friction, Air resistance, Drag.</p>
+
+                    <div class="note" style="background: #fff3cd; border-left: 4px solid #ffc107;">
+                        <h4>⚠️ Common Misconception:</h4>
+                        <p><strong>"Energy is always conserved, so mechanical energy is always conserved."</strong></p>
+                        <p>❌ FALSE! Total energy is always conserved, but <strong>mechanical energy</strong> (K + U) is
+                            only conserved when ONLY conservative forces do work.</p>
+                        <p>When friction acts, mechanical energy decreases (converted to thermal energy), but total
+                            energy is still conserved!</p>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h3>⚖️ Energy Conservation in a Pendulum</h3>
+                    <p>A swinging pendulum perfectly demonstrates energy transformation between PE and KE:</p>
+                    <div class="diagram" style="text-align: center;">
+                        <img src="images/pendulum_energy.png" alt="Pendulum Energy Transformation"
+                            style="max-width: 100%; height: auto;">
+                        <p style="color: #666; margin-top: 10px;">At points A and C (maximum height): Maximum PE, Zero
+                            KE<br>At point B (lowest point): Zero PE, Maximum KE</p>
+                    </div>
                 </div>
 
                 <div class="diagram">
