@@ -431,6 +431,59 @@
                         Choose the system that makes the problem simplest!
                     </div>
                 </div>
+
+                <div class="example">
+                    <h4>📖 Example 2: Energy Transfer Analysis</h4>
+                    <p><strong>Problem:</strong> A car accelerates from rest to 20 m/s. Analyze the energy transfers for
+                        two different system choices.</p>
+                    <p><strong>Solution:</strong></p>
+                    <p><strong>System A: Car only</strong></p>
+                    <ul>
+                        <li>Initial KE = 0 (at rest)</li>
+                        <li>Final KE = ½mv² (moving at 20 m/s)</li>
+                        <li>Energy enters the system via work done by the road on the tires</li>
+                    </ul>
+                    <p><strong>System B: Car + Fuel</strong></p>
+                    <ul>
+                        <li>Chemical PE in fuel decreases</li>
+                        <li>KE of car increases</li>
+                        <li>Some energy leaves as heat (thermal energy)</li>
+                        <li>This is an internal transformation - no external work!</li>
+                    </ul>
+                </div>
+
+                <div class="example">
+                    <h4>📖 Example 3: Open vs Closed Systems</h4>
+                    <p><strong>Problem:</strong> Classify each system as open, closed, or isolated:</p>
+                    <ol>
+                        <li>A thermos bottle with hot coffee</li>
+                        <li>A pot of boiling water on a stove</li>
+                        <li>The entire universe</li>
+                    </ol>
+                    <p><strong>Solution:</strong></p>
+                    <table>
+                        <tr>
+                            <th>System</th>
+                            <th>Classification</th>
+                            <th>Reasoning</th>
+                        </tr>
+                        <tr>
+                            <td>Thermos</td>
+                            <td>Nearly Isolated</td>
+                            <td>Minimizes energy and matter exchange</td>
+                        </tr>
+                        <tr>
+                            <td>Boiling pot</td>
+                            <td>Open</td>
+                            <td>Energy enters (heat), matter leaves (steam)</td>
+                        </tr>
+                        <tr>
+                            <td>Universe</td>
+                            <td>Isolated</td>
+                            <td>Contains everything - no "outside" to exchange with</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
 
             <!-- Section 7.2 -->
@@ -593,9 +646,76 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="example">
+                    <h4>📖 Example 4: Work on an Incline</h4>
+                    <p><strong>Problem:</strong> A 10 kg box slides 4 m down a 30° incline. Calculate the work done by
+                        gravity.</p>
+                    <button onclick="toggleSolution('sol4')">Show Solution</button>
+                    <div id="sol4" class="solution">
+                        <div class="step">
+                            <strong>Method 1: Using the component of displacement</strong><br>
+                            Vertical drop = \(4 \sin(30°) = 4 \times 0.5 = 2\) m<br>
+                            $$ W_g = mgh = 10 \times 10 \times 2 = 200 \text{ J} $$
+                        </div>
+                        <div class="step">
+                            <strong>Method 2: Using W = Fd cos(θ)</strong><br>
+                            Force of gravity = \(mg = 100\) N (downward)<br>
+                            Angle between gravity and displacement along incline = \(90° - 30° = 60°\)<br>
+                            $$ W = 100 \times 4 \times \cos(60°) = 100 \times 4 \times 0.5 = 200 \text{ J} $$
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example">
+                    <h4>📖 Example 5: Friction Work Problem</h4>
+                    <p><strong>Problem:</strong> A 5 kg block is pushed 3 m across a floor with μₖ = 0.4. Calculate the
+                        work done by friction.</p>
+                    <button onclick="toggleSolution('sol5')">Show Solution</button>
+                    <div id="sol5" class="solution">
+                        <div class="step">
+                            <strong>Step 1: Find friction force</strong><br>
+                            Normal force = \(mg = 5 \times 10 = 50\) N<br>
+                            Friction = \(\mu_k N = 0.4 \times 50 = 20\) N
+                        </div>
+                        <div class="step">
+                            <strong>Step 2: Calculate work</strong><br>
+                            Friction opposes motion, so θ = 180°<br>
+                            $$ W_f = 20 \times 3 \times \cos(180°) = 20 \times 3 \times (-1) $$
+                            <strong>\(W_f = -60\) J</strong>
+                        </div>
+                        <div class="important">
+                            Negative work means energy is removed from the system (converted to thermal energy).
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example">
+                    <h4>📖 Example 6: Net Work Calculation</h4>
+                    <p><strong>Problem:</strong> Three forces act on a 2 kg object moving 4 m to the right: F₁ = 20 N
+                        (right), F₂ = 15 N (at 60° above horizontal), F₃ = 8 N (left). Find the net work.</p>
+                    <button onclick="toggleSolution('sol6')">Show Solution</button>
+                    <div id="sol6" class="solution">
+                        <div class="step">
+                            <strong>Work by F₁:</strong><br>
+                            \(W_1 = 20 \times 4 \times \cos(0°) = 80\) J
+                        </div>
+                        <div class="step">
+                            <strong>Work by F₂:</strong><br>
+                            \(W_2 = 15 \times 4 \times \cos(60°) = 15 \times 4 \times 0.5 = 30\) J
+                        </div>
+                        <div class="step">
+                            <strong>Work by F₃:</strong><br>
+                            \(W_3 = 8 \times 4 \times \cos(180°) = 8 \times 4 \times (-1) = -32\) J
+                        </div>
+                        <div class="step">
+                            <strong>Net Work:</strong><br>
+                            $$ W_{net} = W_1 + W_2 + W_3 = 80 + 30 - 32 = 78 \text{ J} $$
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Section 7.3 -->
             <div class="section">
                 <h2 class="section-title">7.3 The Scalar Product of Two Vectors</h2>
 
@@ -1019,6 +1139,67 @@
                         x = 0<br>• Force: F = -kx (proportional to displacement)
                     </div>
                 </div>
+
+                <div class="example">
+                    <h4>📖 Example 9: Gravitational PE Calculation</h4>
+                    <p><strong>Problem:</strong> A 2 kg book is moved from a table 0.8 m high to a shelf 2.5 m above the
+                        floor. Calculate the change in gravitational PE.</p>
+                    <button onclick="toggleSolution('sol9')">Show Solution</button>
+                    <div id="sol9" class="solution">
+                        <div class="step">
+                            <strong>Given:</strong><br>
+                            \(m = 2\) kg, \(y_i = 0.8\) m, \(y_f = 2.5\) m
+                        </div>
+                        <div class="step">
+                            <strong>Solution:</strong><br>
+                            $$ \Delta U_g = mg(y_f - y_i) $$
+                            $$ \Delta U_g = (2)(10)(2.5 - 0.8) $$
+                            $$ \Delta U_g = 20 \times 1.7 $$
+                            <strong>\(\Delta U_g = 34\) J</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example">
+                    <h4>📖 Example 10: Elastic PE in a Spring</h4>
+                    <p><strong>Problem:</strong> A spring with k = 200 N/m is stretched 15 cm from equilibrium.
+                        Calculate the elastic PE stored.</p>
+                    <button onclick="toggleSolution('sol10')">Show Solution</button>
+                    <div id="sol10" class="solution">
+                        <div class="step">
+                            <strong>Given:</strong><br>
+                            \(k = 200\) N/m, \(x = 0.15\) m
+                        </div>
+                        <div class="step">
+                            <strong>Solution:</strong><br>
+                            $$ U_s = \frac{1}{2}kx^2 $$
+                            $$ U_s = \frac{1}{2}(200)(0.15)^2 $$
+                            $$ U_s = 100 \times 0.0225 $$
+                            <strong>\(U_s = 2.25\) J</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example">
+                    <h4>📖 Example 11: Combined PE Problem</h4>
+                    <p><strong>Problem:</strong> A 0.5 kg ball on a spring (k = 400 N/m) is compressed 8 cm and raised
+                        1.2 m. Find the total PE.</p>
+                    <button onclick="toggleSolution('sol11')">Show Solution</button>
+                    <div id="sol11" class="solution">
+                        <div class="step">
+                            <strong>Gravitational PE:</strong><br>
+                            $$ U_g = mgy = (0.5)(10)(1.2) = 6 \text{ J} $$
+                        </div>
+                        <div class="step">
+                            <strong>Elastic PE:</strong><br>
+                            $$ U_s = \frac{1}{2}kx^2 = \frac{1}{2}(400)(0.08)^2 = 1.28 \text{ J} $$
+                        </div>
+                        <div class="step">
+                            <strong>Total PE:</strong><br>
+                            $$ U_{total} = U_g + U_s = 6 + 1.28 = 7.28 \text{ J} $$
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Section 7.7 -->
             <div class="section">
@@ -1059,1351 +1240,1598 @@
                                 requires same work as pushing it up a ramp (Path B) to the same height (ignoring
                                 friction).</p>
                 </div>
-            </div>
 
-            <div class="subsection">
-                <h3>⚖️ Mechanical Energy</h3>
-                <p>The total mechanical energy of a system is:</p>
+                <div class="subsection">
+                    <h3>⚖️ Mechanical Energy</h3>
+                    <p>The total mechanical energy of a system is:</p>
 
-                <div class="formula">
-                    $$ E_{\text{mech}} = K + U $$
-                </div>
+                    <div class="formula">
+                        $$ E_{\text{mech}} = K + U $$
+                    </div>
 
-                <p>If only conservative forces act, mechanical energy is conserved:</p>
+                    <p>If only conservative forces act, mechanical energy is conserved:</p>
 
-                <div class="formula">
-                    $$ \Delta E_{\text{mech}} = 0 \Rightarrow K_i + U_i = K_f + U_f $$
-                </div>
+                    <div class="formula">
+                        $$ \Delta E_{\text{mech}} = 0 \Rightarrow K_i + U_i = K_f + U_f $$
+                    </div>
 
-                <p>If nonconservative forces (like friction) act:</p>
+                    <p>If nonconservative forces (like friction) act:</p>
 
-                <div class="formula">
-                    $$ W_{\text{nc}} = \Delta E_{\text{mech}} = \Delta K + \Delta U $$
-                </div>
-            </div>
-        </div>
-
-        <!-- Section 7.8 -->
-        <div class="section">
-            <h2 class="section-title">7.8 Relationship Between Conservative Forces and Potential Energy</h2>
-
-            <div class="subsection">
-                <h3>🔗 Force from Potential Energy</h3>
-                <p>Conservative forces always drive a system toward lower potential energy. The force is the
-                    negative derivative (slope) of the potential energy function.</p>
-
-                <div class="formula">
-                    $$ F_x = - \frac{dU}{dx} $$
-                </div>
-
-                <div class="key-point">
-                    <ul>
-                        <li><strong>Steep slope (large \(dU/dx\))</strong> → Strong force</li>
-                        <li><strong>Flat slope (\(dU/dx = 0\))</strong> → Zero force (Equilibrium)</li>
-                        <li><strong>Positive slope</strong> → Force is negative (pushes left)</li>
-                        <li><strong>Negative slope</strong> → Force is positive (pushes right)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="subsection">
-                <h3>⚖️ Types of Equilibrium</h3>
-                <table>
-                    <tr>
-                        <th>Type</th>
-                        <th>Condition</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td><strong>Stable</strong></td>
-                        <td>\(\frac{dU}{dx} = 0\), \(U\) is min (valley)</td>
-                        <td>System returns to position if displaced (like a ball in a bowl).</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Unstable</strong></td>
-                        <td>\(\frac{dU}{dx} = 0\), \(U\) is max (peak)</td>
-                        <td>System speeds away if displaced (like a ball on a hill).</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Neutral</strong></td>
-                        <td>\(\frac{dU}{dx} = 0\), \(U\) is constant</td>
-                        <td>System stays put if displaced (ball on flat table).</td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="example">
-                <h4>📖 Example 9: Lennard-Jones Potential</h4>
-                <p>The potential energy between two atoms in a molecule is often modeled as:</p>
-                <div class="formula">
-                    $$ U(r) = \frac{A}{r^{12}} - \frac{B}{r^6} $$
-                </div>
-                <p>The force is \(F(r) = -dU/dr\). The atoms settle at the distance \(r\) where force is zero
-                    (minimum \(U\)) -
-                    this is the bond length!</p>
-            </div>
-        </div>
-
-        <!-- Summary -->
-        <div class="section">
-            <h2 class="section-title">📝 Chapter Summary & Practice</h2>
-
-            <div class="subsection">
-                <h3>🔑 Key Formulas</h3>
-                <ul>
-                    <li>Work (Constant Force): \(W = F d \cos(\theta)\)</li>
-                    <li>Scalar Product: \(\mathbf{A} \cdot \mathbf{B} = AB \cos(\theta) = A_x B_x + A_y B_y\)</li>
-                    <li>Hooke's Law: \(F_s = -kx\)</li>
-                    <li>Work (Spring): \(W_s = -\frac{1}{2}k(x_f^2 - x_i^2)\)</li>
-                    <li>Kinetic Energy: \(K = \frac{1}{2}mv^2\)</li>
-                    <li>Work-KE Theorem: \(W_{\text{net}} = \Delta K\)</li>
-                    <li>Gravitational PE: \(U_g = mgy\)</li>
-                    <li>Elastic PE: \(U_s = \frac{1}{2}kx^2\)</li>
-                    <li>Conservation: \(E_i = E_f\) (if no nonconservative forces)</li>
-                    <li>Force from PE: \(F_x = -dU/dx\)</li>
-                </ul>
-            </div>
-
-            <div class="subsection">
-                <h3>🧩 Topic 1: Systems & Energy Types</h3>
-                <div class="example">
-                    <p><strong>Q1:</strong> A cyclist moves down a hill. If we define the system as "Cyclist +
-                        Earth", is the gravitational force an external or internal force?</p>
-                    <button onclick="toggleSolution('q1')">Show Solution</button>
-                    <div id="q1" class="solution">
-                        <strong>Internal.</strong> Since the Earth is part of the system, the interaction between
-                        the Earth and the cyclist (gravity) is internal.
+                    <div class="formula">
+                        $$ W_{\text{nc}} = \Delta E_{\text{mech}} = \Delta K + \Delta U $$
                     </div>
                 </div>
+
                 <div class="example">
-                    <p><strong>Q2:</strong> Identify the energy transformation: A battery-operated toy car
-                        accelerates up a ramp.</p>
-                    <button onclick="toggleSolution('q2')">Show Solution</button>
-                    <div id="q2" class="solution">
-                        Chemical Potential Energy (Battery) → Electrical Energy → Kinetic Energy (Motion) +
-                        Gravitational Potential Energy (Height) + Thermal Energy (Friction).
+                    <h4>📖 Example 12: Energy Conservation (No Friction)</h4>
+                    <p><strong>Problem:</strong> A 2 kg ball is dropped from 10 m. Using energy conservation, find its
+                        speed just before hitting the ground.</p>
+                    <button onclick="toggleSolution('sol12')">Show Solution</button>
+                    <div id="sol12" class="solution">
+                        <div class="step">
+                            <strong>Initial State:</strong><br>
+                            \(K_i = 0\) (at rest), \(U_i = mgh = (2)(10)(10) = 200\) J
+                        </div>
+                        <div class="step">
+                            <strong>Final State:</strong><br>
+                            \(K_f = \frac{1}{2}mv^2\), \(U_f = 0\) (ground level)
+                        </div>
+                        <div class="step">
+                            <strong>Apply Conservation:</strong><br>
+                            $$ K_i + U_i = K_f + U_f $$
+                            $$ 0 + 200 = \frac{1}{2}(2)v^2 + 0 $$
+                            $$ v^2 = 200 $$
+                            <strong>\(v = \sqrt{200} \approx 14.1\) m/s</strong>
+                        </div>
                     </div>
                 </div>
+
                 <div class="example">
-                    <p><strong>Q3:</strong> True or False: A system can have potential energy even if it consists of
-                        only a single isolated particle.</p>
-                    <button onclick="toggleSolution('q3')">Show Solution</button>
-                    <div id="q3" class="solution">
-                        <strong>False.</strong> Potential energy exists only between interacting objects (like Earth
-                        + Stone). A single particle can only have Kinetic Energy or Rest Energy.
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q4:</strong> Which of the following is NOT a unit of energy? (a) Joule (b)
-                        Newton-meter (c) Watt (d) \(\text{kg} \cdot \text{m}^2/\text{s}^2\)</p>
-                    <button onclick="toggleSolution('q4')">Show Solution</button>
-                    <div id="q4" class="solution">
-                        <strong>(c) Watt.</strong> Watt is a unit of Power (Joules per second). All others are units
-                        of Energy.
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q5:</strong> If the environment does positive work on a system, what happens to the
-                        system's total energy?</p>
-                    <button onclick="toggleSolution('q5')">Show Solution</button>
-                    <div id="q5" class="solution">
-                        Since \(W_{\text{ext}} = \Delta E_{\text{sys}}\), positive work increases the total energy
-                        of the system.
+                    <h4>📖 Example 13: Energy with Friction</h4>
+                    <p><strong>Problem:</strong> A 5 kg box slides 3 m down a 30° incline with μₖ = 0.2. Find its final
+                        speed.</p>
+                    <button onclick="toggleSolution('sol13')">Show Solution</button>
+                    <div id="sol13" class="solution">
+                        <div class="step">
+                            <strong>Height drop:</strong> \(h = 3\sin(30°) = 1.5\) m<br>
+                            <strong>Initial PE:</strong> \(U_i = mgh = (5)(10)(1.5) = 75\) J
+                        </div>
+                        <div class="step">
+                            <strong>Work by friction:</strong><br>
+                            \(N = mg\cos(30°) = 50(0.866) = 43.3\) N<br>
+                            \(f_k = \mu_k N = (0.2)(43.3) = 8.66\) N<br>
+                            \(W_{nc} = -f_k d = -(8.66)(3) = -26\) J
+                        </div>
+                        <div class="step">
+                            <strong>Apply work-energy:</strong><br>
+                            $$ K_f = U_i + W_{nc} = 75 - 26 = 49 \text{ J} $$
+                            $$ \frac{1}{2}(5)v^2 = 49 \Rightarrow v = \sqrt{19.6} \approx 4.4 \text{ m/s} $$
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="example">
-                <p><strong>Q5a:</strong> A rocket burns fuel in space. Define the system as "rocket + exhaust gases".
-                    What energy transformation occurs?</p>
-                <button onclick="toggleSolution('q5a')">Show Solution</button>
-                <div id="q5a" class="solution">
-                    <strong>Chemical PE → Kinetic Energy.</strong> The chemical energy stored in the fuel is converted
-                    to kinetic energy of both the rocket and exhaust gases. Since the system includes both, momentum is
-                    conserved internally.
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q5b:</strong> A compressed spring is placed between two carts on a frictionless surface and
-                    released. If the system is "both carts + spring", is the spring's force internal or external?</p>
-                <button onclick="toggleSolution('q5b')">Show Solution</button>
-                <div id="q5b" class="solution">
-                    <strong>Internal.</strong> The spring is part of the system, so any force it exerts is an internal
-                    force.
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q5c:</strong> Which represents energy <em>transfer</em>, not transformation?<br>
-                    (a) A ball falling<br>
-                    (b) A hot object warming a cold one<br>
-                    (c) A battery powering a motor<br>
-                    (d) A spring launching a ball</p>
-                <button onclick="toggleSolution('q5c')">Show Solution</button>
-                <div id="q5c" class="solution">
-                    <strong>(b) A hot object warming a cold one.</strong> This is heat transfer between objects, not
-                    energy transformation.
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q5d:</strong> A system loses \(50 \text{ J}\) of energy to the environment. What is
-                    \(W_{\text{env}}\)?</p>
-                <button onclick="toggleSolution('q5d')">Show Solution</button>
-                <div id="q5d" class="solution">
-                    \(W_{\text{env}} = \Delta E_{\text{sys}} = -50 \text{ J}\). Negative work means energy leaves the
-                    system.
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q5e:</strong> In a car crash, KE is mainly converted to:<br>
-                    (a) Gravitational PE (b) Elastic PE (c) Internal Energy + Sound (d) Chemical Energy</p>
-                <button onclick="toggleSolution('q5e')">Show Solution</button>
-                <div id="q5e" class="solution">
-                    <strong>(c) Internal Energy + Sound.</strong> The kinetic energy goes into deforming metal (internal
-                    energy), heating, and sound.
-                </div>
-            </div>
-        </div>
 
-        <div class="subsection">
-            <h3>📐 Topic 2: Work (Constant Force) & Dot Products</h3>
-            <div class="example">
-                <p><strong>Q6:</strong> Calculate the work done by a force \(F = 20 \text{ N}\) pushing a box
-                    \(3 \text{ m}\) across a floor at an angle of \(60^\circ\) below the horizontal.</p>
-                <button onclick="toggleSolution('q6')">Show Solution</button>
-                <div id="q6" class="solution">
-                    $$ W = F d \cos(\theta) = 20(3) \cos(60^\circ) = 60(0.5) = 30 \text{ J} $$
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q7:</strong> A waiter carries a tray of food across a room at constant velocity. Is
-                    the waiter doing work on the tray?</p>
-                <button onclick="toggleSolution('q7')">Show Solution</button>
-                <div id="q7" class="solution">
-                    <strong>No.</strong> The force (Normal force) is vertical (up), while the displacement is
-                    horizontal. Since \(\theta = 90^\circ\), \(W = F d \cos(90^\circ) = 0\).
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q8:</strong> Calculate the dot product of \(\mathbf{A} = 3\mathbf{\hat{i}} +
-                    2\mathbf{\hat{j}}\) and \(\mathbf{B} = -1\mathbf{\hat{i}} + 4\mathbf{\hat{j}}\).</p>
-                <button onclick="toggleSolution('q8')">Show Solution</button>
-                <div id="q8" class="solution">
-                    $$ \mathbf{A} \cdot \mathbf{B} = (3)(-1) + (2)(4) = -3 + 8 = 5 $$
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q9:</strong> If \(\mathbf{A} \cdot \mathbf{B} = 0\) and neither vector is zero, what
-                    is the geometric relationship between them?</p>
-                <button onclick="toggleSolution('q9')">Show Solution</button>
-                <div id="q9" class="solution">
-                    They are <strong>perpendicular</strong> (orthogonal), because \(\cos(90^\circ) = 0\).
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q10:</strong> A force \(\mathbf{F} = (4\mathbf{\hat{i}} + 3\mathbf{\hat{j}}) \text{
-                    N}\) moves a particle from origin to \(\mathbf{r} = (2\mathbf{\hat{i}}) \text{ m}\). Find
-                    the work done.</p>
-                <button onclick="toggleSolution('q10')">Show Solution</button>
-                <div id="q10" class="solution">
-                    Displacement \(\mathbf{d} = 2\mathbf{\hat{i}}\) (no y-component).<br>
-                    \(W = F_x d_x + F_y d_y = (4)(2) + (3)(0) = 8 \text{ J}\).
-                </div>
-            </div>
-        </div>
+            <!-- Section 7.8 -->
+            <div class="section">
+                <h2 class="section-title">7.8 Relationship Between Conservative Forces and Potential Energy</h2>
 
-        <!-- New Topic 2 Questions with Diagrams -->
-        <div class="example">
-            <p><strong>Q10a:</strong> A box on a \(30^\circ\) incline has mass \(10 \text{ kg}\). What is the work done
-                by gravity if it slides \(5 \text{ m}\) down the incline?</p>
-            <div class="diagram">
-                <img src="inclined_plane_forces_1767723092991.png" alt="Inclined Plane"
-                    style="max-width: 100%; border-radius: 10px;">
-            </div>
-            <button onclick="toggleSolution('q10a')">Show Solution</button>
-            <div id="q10a" class="solution">
-                $$ W = mg\sin(30^\circ) \cdot d = 10(10)(0.5)(5) = 250 \text{ J} $$
-            </div>
-        </div>
-        <div class="example">
-            <p><strong>Q10b:</strong> In Q10a, if \(\mu_k = 0.2\), what is the work done by friction?</p>
-            <button onclick="toggleSolution('q10b')">Show Solution</button>
-            <div id="q10b" class="solution">
-                \(N = mg\cos(30^\circ) = 86.6 \text{ N}\)<br>
-                $$ W_f = -\mu_k N \cdot d = -17.32(5) = -86.6 \text{ J} $$
-            </div>
-        </div>
-        <div class="example">
-            <p><strong>Q10c:</strong> A box is pulled at \(37^\circ\) above horizontal with force \(50 \text{ N}\) over
-                \(8 \text{ m}\). What is the work done?</p>
-            <div class="diagram">
-                <img src="pulling_box_angle_1767723121024.png" alt="Pulling at Angle"
-                    style="max-width: 100%; border-radius: 10px;">
-            </div>
-            <button onclick="toggleSolution('q10c')">Show Solution</button>
-            <div id="q10c" class="solution">
-                $$ W = 50(8)\cos(37^\circ) = 320 \text{ J} $$
-            </div>
-        </div>
-        <div class="example">
-            <p><strong>Q10d:</strong> What force is needed to pull a \(20 \text{ kg}\) box at constant velocity if
-                \(\mu_k = 0.25\)?</p>
-            <button onclick="toggleSolution('q10d')">Show Solution</button>
-            <div id="q10d" class="solution">
-                $$ F = \mu_k mg = 0.25(20)(10) = 50 \text{ N} $$
-            </div>
-        </div>
-        <div class="example">
-            <p><strong>Q10e:</strong> Given \(\vec{F} = 5\hat{i} - 3\hat{j} + 2\hat{k}\) N and \(\vec{d} = 2\hat{i} +
-                4\hat{j} - \hat{k}\) m, find the work done.</p>
-            <button onclick="toggleSolution('q10e')">Show Solution</button>
-            <div id="q10e" class="solution">
-                $$ W = 10 - 12 - 2 = -4 \text{ J} $$
-            </div>
-        </div>
-        <div class="example">
-            <p><strong>Q10f:</strong> An object moves in uniform circular motion. What is the work done by the
-                centripetal force?</p>
-            <button onclick="toggleSolution('q10f')">Show Solution</button>
-            <div id="q10f" class="solution">
-                <strong>Zero.</strong> The force is always perpendicular to the displacement.
-            </div>
-        </div>
-        <div class="example">
-            <p><strong>Q10g:</strong> An elevator of mass \(500 \text{ kg}\) rises \(20 \text{ m}\) at constant speed.
-                What is the work done by the cable?</p>
-            <button onclick="toggleSolution('q10g')">Show Solution</button>
-            <div id="q10g" class="solution">
-                $$ W = 500(10)(20) = 100 \text{ kJ} $$
-            </div>
-        </div>
-        <div class="example">
-            <p><strong>Q10h:</strong> \(\theta = 120^\circ\), \(|A| = 6\), \(|B| = 4\). Find \(\vec{A} \cdot \vec{B}\)?
-            </p>
-            <button onclick="toggleSolution('q10h')">Show Solution</button>
-            <div id="q10h" class="solution">
-                $$ \vec{A} \cdot \vec{B} = 24\cos(120^\circ) = -12 $$
-            </div>
-        </div>
-        <div class="example">
-            <p><strong>Q10i:</strong> A crane lifts \(200 \text{ kg}\) with acceleration \(2 \text{ m/s}^2\) through
-                \(15 \text{ m}\). What is the work done?</p>
-            <button onclick="toggleSolution('q10i')">Show Solution</button>
-            <div id="q10i" class="solution">
-                $$ W = m(g+a)d = 200(12)(15) = 36 \text{ kJ} $$
-            </div>
-        </div>
-        <div class="example">
-            <p><strong>Q10j:</strong> A force of \(100 \text{ N}\) acts over \(10 \text{ m}\) and does \(500 \text{ J}\)
-                of work. What is the angle between force and displacement?</p>
-            <button onclick="toggleSolution('q10j')">Show Solution</button>
-            <div id="q10j" class="solution">
-                $$ \theta = \cos^{-1}(0.5) = 60^\circ $$
-            </div>
-        </div>
+                <div class="subsection">
+                    <h3>🔗 Force from Potential Energy</h3>
+                    <p>Conservative forces always drive a system toward lower potential energy. The force is the
+                        negative derivative (slope) of the potential energy function.</p>
 
-        <div class="subsection">
-            <h3>🌀 Topic 3: Springs & Variable Forces</h3>
-            <div class="example">
-                <p><strong>Q11:</strong> A spring with \(k = 200 \text{ N/m}\) is stretched \(0.1 \text{ m}\).
-                    What force does the spring exert?</p>
-                <button onclick="toggleSolution('q11')">Show Solution</button>
-                <div id="q11" class="solution">
-                    Magnitude \(|F_s| = kx = 200(0.1) = 20 \text{ N}\). Direction is opposite to stretch.
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q12:</strong> How much work is required to stretch the spring in Q11 from equilibrium
-                    to \(0.1 \text{ m}\)?</p>
-                <button onclick="toggleSolution('q12')">Show Solution</button>
-                <div id="q12" class="solution">
-                    External work is equal to stored PE: \(W_{\text{ext}} = \frac{1}{2}kx^2 = 0.5(200)(0.1)^2 =
-                    100(0.01) = 1 \text{ J}\).
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q13:</strong> If you stretch a spring twice as far (from \(x\) to \(2x\)), how much
-                    more potential energy is stored?</p>
-                <button onclick="toggleSolution('q13')">Show Solution</button>
-                <div id="q13" class="solution">
-                    Since \(U_s \propto x^2\), doubling \(x\) means \((2x)^2 = 4x^2\). The energy increases by a
-                    factor of <strong>4</strong>.
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q14:</strong> The area under a Force vs. Position graph represents what quantity?</p>
-                <button onclick="toggleSolution('q14')">Show Solution</button>
-                <div id="q14" class="solution">
-                    <strong>Work done</strong> by the force.
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q15:</strong> A spring is compressed by \(x\). Does the spring do positive or
-                    negative work on the block compressing it?</p>
-                <button onclick="toggleSolution('q15')">Show Solution</button>
-                <div id="q15" class="solution">
-                    <strong>Negative.</strong> The spring pushes outwards (opposing motion) while the block
-                    moves inwards (compression). Force and displacement are opposite.
-                </div>
-            </div>
-        </div>
-        <!-- New Topic 3 Questions -->
-        <div class="example">
-            <p><strong>Q15a:</strong> Two springs in parallel have \(k_1 = 100\) N/m and \(k_2 = 200 \text{ N/m}\). What
-                is the equivalent spring constant?</p>
-            <div class="diagram">
-                <img src="spring_systems_1767723147646.png" alt="Spring Systems"
-                    style="max-width: 100%; border-radius: 10px;">
-            </div>
-            <button onclick="toggleSolution('q15a')">Show Solution</button>
-            <div id="q15a" class="solution">
-                $$ k_{eq} = k_1 + k_2 = 300 \text{ N/m} $$
-            </div>
-        </div>
-        <div class="example">
-            <p><strong>Q15b:</strong> Two springs in series have \(k_1 = 100\) N/m and \(k_2 = 200 \text{ N/m}\). What
-                is the equivalent spring constant?</p>
-            <button onclick="toggleSolution('q15b')">Show Solution</button>
-            <div id="q15b" class="solution">
-                $$ k_{eq} = \frac{k_1 k_2}{k_1 + k_2} = 66.7 \text{ N/m} $$
-            </div>
-        </div>
-        <div class="example">
-            <p><strong>Q15c:</strong> A spring with \(k = 500 \text{ N/m}\) is compressed by \(0.2 \text{ m}\). What is
-                the stored potential energy?</p>
-            <button onclick="toggleSolution('q15c')">Show Solution</button>
-            <div id="q15c" class="solution">
-                $$ U_s = \frac{1}{2}(500)(0.2)^2 = 10 \text{ J} $$
-            </div>
-        </div>
-        <div class="example">
-            <p><strong>Q15d:</strong> A variable force \(F(x) = 3x^2\) acts from \(x=0\) to \(x=2\) m. What is the work
-                done?</p>
-            <button onclick="toggleSolution('q15d')">Show Solution</button>
-            <div id="q15d" class="solution">
-                $$ W = \int_0^2 3x^2 dx = 8 \text{ J} $$
-            </div>
-        </div>
-        <div class="example">
-            <p><strong>Q15e:</strong> A spring is stretched from \(x_1=0.1\) m to \(x_2=0.3\) m, with \(k=400\) N/m.
-                What is the work done by the spring?</p>
-            <button onclick="toggleSolution('q15e')">Show Solution</button>
-            <div id="q15e" class="solution">
-                $$ W_s = \frac{1}{2}k(x_1^2 - x_2^2) = -16 \text{ J} $$
-            </div>
-        </div>
-        <div class="example">
-            <p><strong>Q15f:</strong> A \(0.5 \text{ kg}\) mass hangs from a vertical spring and settles at \(x=0.05\)
-                m. What is \(k\)?</p>
-            <button onclick="toggleSolution('q15f')">Show Solution</button>
-            <div id="q15f" class="solution">
-                $$ k = \frac{mg}{x} = 100 \text{ N/m} $$
-            </div>
-        </div>
-        <div class="example">
-            <p><strong>Q15g:</strong> An F-x graph shows force increasing linearly from 0 to 40 N over 10 m. What is the
-                work done?</p>
-            <div class="diagram">
-                <img src="fx_graph_linear_increase_1767723227495.png" alt="F-x Graph"
-                    style="max-width: 100%; border-radius: 10px;">
-            </div>
-            <button onclick="toggleSolution('q15g')">Show Solution</button>
-            <div id="q15g" class="solution">
-                $$ W = \frac{1}{2}(10)(40) = 200 \text{ J} $$
-            </div>
-        </div>
+                    <div class="formula">
+                        $$ F_x = - \frac{dU}{dx} $$
+                    </div>
 
-        <div class="subsection">
-            <h3>🏃 Topic 4: Kinetic Energy & Work-KE Theorem</h3>
-            <div class="example">
-                <p><strong>Q16:</strong> If the speed of a car doubles, its kinetic energy increases by what
-                    factor?</p>
-                <button onclick="toggleSolution('q16')">Show Solution</button>
-                <div id="q16" class="solution">
-                    Since \(K \propto v^2\), doubling speed (\(2v\)) leads to \((2v)^2 = 4v^2\). Factor of
-                    <strong>4</strong>.
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q17:</strong> Can kinetic energy ever be negative?</p>
-                <button onclick="toggleSolution('q17')">Show Solution</button>
-                <div id="q17" class="solution">
-                    <strong>No.</strong> Mass is positive and \(v^2\) is always positive (or zero).
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q18:</strong> A net force of \(10 \text{ N}\) acts on a \(2 \text{ kg}\) object over
-                    \(5 \text{ m}\). What is the change in Kinetic Energy?</p>
-                <button onclick="toggleSolution('q18')">Show Solution</button>
-                <div id="q18" class="solution">
-                    By Work-KE Theorem: \(\Delta K = W_{\text{net}} = F d = 10(5) = 50 \text{ J}\).
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q19:</strong> Two identical cars travel at the same speed. One heads North, one heads
-                    East. Do they have the same Kinetic Energy?</p>
-                <button onclick="toggleSolution('q19')">Show Solution</button>
-                <div id="q19" class="solution">
-                    <strong>Yes.</strong> KE depends on speed (scalar), not velocity (vector). Direction doesn't
-                    matter.
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q20:</strong> A particle moving at \(5 \text{ m/s}\) is brought to rest by a net work
-                    \(W\). Is \(W\) positive or negative?</p>
-                <button onclick="toggleSolution('q20')">Show Solution</button>
-                <div id="q20" class="solution">
-                    <Strong>Negative.</Strong> Final KE is lower than Initial KE, so \(\Delta K < 0\), implying
-                        \(W_{\text{net}} < 0\). </div>
-                </div>
-            </div>
-            <!-- New Topic 4 Questions -->
-            <div class="example">
-                <p><strong>Q20a:</strong> A roller coaster starts from point A (h=20m) with no initial speed. What is
-                    its speed at point B (h=0)?</p>
-                <div class="diagram">
-                    <img src="roller_coaster_energy_1767723175740.png" alt="Roller Coaster"
-                        style="max-width: 100%; border-radius: 10px;">
-                </div>
-                <button onclick="toggleSolution('q20a')">Show Solution</button>
-                <div id="q20a" class="solution">
-                    $$ v = \sqrt{2gh} = \sqrt{2(10)(20)} = 20 \text{ m/s} $$
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q20b:</strong> In Q20a, what is the cart's speed at point C (h=12m)?</p>
-                <button onclick="toggleSolution('q20b')">Show Solution</button>
-                <div id="q20b" class="solution">
-                    $$ v = \sqrt{2g(20-12)} = \sqrt{160} \approx 12.6 \text{ m/s} $$
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q20c:</strong> A \(1000 \text{ kg}\) car moving at \(20 \text{ m/s}\). What work is needed to
-                    stop it?</p>
-                <button onclick="toggleSolution('q20c')">Show Solution</button>
-                <div id="q20c" class="solution">
-                    $$ W = -\frac{1}{2}(1000)(400) = -200 \text{ kJ} $$
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q20d:</strong> What distance is needed to stop the car in Q20c if the braking force is \(F =
-                    8000 \text{ N}\)?</p>
-                <button onclick="toggleSolution('q20d')">Show Solution</button>
-                <div id="q20d" class="solution">
-                    $$ d = \frac{200000}{8000} = 25 \text{ m} $$
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q20e:</strong> A \(5 \text{ kg}\) object accelerates from rest to \(10 \text{ m/s}\). What is
-                    \(\Delta K\)?</p>
-                <button onclick="toggleSolution('q20e')">Show Solution</button>
-                <div id="q20e" class="solution">
-                    $$ \Delta K = \frac{1}{2}(5)(100) = 250 \text{ J} $$
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q20f:</strong> Two objects have the same KE. If \(m_1=2\) kg and \(m_2=8\) kg, what is the
-                    ratio \(v_1/v_2\)?</p>
-                <button onclick="toggleSolution('q20f')">Show Solution</button>
-                <div id="q20f" class="solution">
-                    $$ \frac{v_1}{v_2} = \sqrt{4} = 2 $$
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q20g:</strong> A force doubles an object's speed. By what factor does its KE increase?</p>
-                <button onclick="toggleSolution('q20g')">Show Solution</button>
-                <div id="q20g" class="solution">
-                    <strong>Factor of 4.</strong>
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q20h:</strong> Two balls have equal mass. \(v_1=3\) m/s and \(v_2=4\) m/s. What is the ratio
-                    \(K_1/K_2\)?</p>
-                <button onclick="toggleSolution('q20h')">Show Solution</button>
-                <div id="q20h" class="solution">
-                    $$ \frac{K_1}{K_2} = \frac{9}{16} $$
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q20i:</strong> A truck and car have the same KE. The truck has \(4\times\) the car's mass.
-                    What is the ratio of their speeds?</p>
-                <button onclick="toggleSolution('q20i')">Show Solution</button>
-                <div id="q20i" class="solution">
-                    $$ v_{car} = 2 v_{truck} $$
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q20j:</strong> An airplane with mass \(50000 \text{ kg}\) flies at \(200 \text{ m/s}\). What
-                    is its KE?</p>
-                <button onclick="toggleSolution('q20j')">Show Solution</button>
-                <div id="q20j" class="solution">
-                    $$ K = 1 \times 10^9 \text{ J} = 1 \text{ GJ} $$
-                </div>
-            </div>
-
-            <div class="subsection">
-                <h3>🌍 Topic 5: Potential Energy & Conservation</h3>
-                <div class="example">
-                    <p><strong>Q21:</strong> A \(1 \text{ kg}\) book is lifted \(1 \text{ m}\). What is the
-                        change in gravitational potential energy?</p>
-                    <button onclick="toggleSolution('q21')">Show Solution</button>
-                    <div id="q21" class="solution">
-                        \(\Delta U_g = mg\Delta y = (1)(9.8)(1) = 9.8 \text{ J}\).
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q22:</strong> A ball is dropped from height \(h\). Just before hitting the
-                        ground, where has the potential energy gone?</p>
-                    <button onclick="toggleSolution('q22')">Show Solution</button>
-                    <div id="q22" class="solution">
-                        It has converted entirely into <strong>Kinetic Energy</strong>.
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q23:</strong> Does the zero point of Potential Energy matter physically?</p>
-                    <button onclick="toggleSolution('q23')">Show Solution</button>
-                    <div id="q23" class="solution">
-                        <strong>No.</strong> Only the <em>difference</em> in potential energy between two points
-                        matters for physical calculations.
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q24:</strong> Friction is a nonconservative force. What happens to mechanical
-                        energy when friction acts?</p>
-                    <button onclick="toggleSolution('q24')">Show Solution</button>
-                    <div id="q24" class="solution">
-                        Mechanical energy is decreased and converted into <strong>Internal Energy</strong>
-                        (heat/thermal).
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q25:</strong> A pendulum swings back and forth. At the bottom of its swing, is
-                        Potential Energy max or min?</p>
-                    <button onclick="toggleSolution('q25')">Show Solution</button>
-                    <div id="q25" class="solution">
-                        <strong>Minimum.</strong> Height is lowest, so \(U_g\) is lowest. Kinetic Energy is
-                        maximum here.
-                    </div>
-                </div>
-            </div>
-            <!-- New Topic 5 Questions -->
-            <div class="example">
-                <p><strong>Q25a:</strong> The diagram shows a simple pendulum. If the pendulum length is \(L = 2 \text{
-                    m}\) and the maximum angle is \(\theta = 30^\circ\), what is the maximum speed at the bottom?</p>
-                <div class="diagram">
-                    <img src="pendulum_energy_1767723201871.png" alt="Pendulum Energy"
-                        style="max-width: 100%; border-radius: 10px;">
-                </div>
-                <button onclick="toggleSolution('q25a')">Show Solution</button>
-                <div id="q25a" class="solution">
-                    Height: \(h = L(1 - \cos\theta) = 2(1 - 0.866) = 0.268 \text{ m}\)<br>
-                    $$ v = \sqrt{2gh} = \sqrt{2(10)(0.268)} = 2.3 \text{ m/s} $$
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q25b:</strong> A \(2 \text{ kg}\) ball falls from \(h = 45 \text{ m}\). What is its speed
-                    just before hitting the ground?</p>
-                <button onclick="toggleSolution('q25b')">Show Solution</button>
-                <div id="q25b" class="solution">
-                    $$ v = \sqrt{2gh} = \sqrt{900} = 30 \text{ m/s} $$
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q25c:</strong> A slide has height \(5 \text{ m}\). What is the child's speed at the bottom?
-                </p>
-                <button onclick="toggleSolution('q25c')">Show Solution</button>
-                <div id="q25c" class="solution">
-                    $$ v = \sqrt{2(10)(5)} = 10 \text{ m/s} $$
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q25d:</strong> A ball is thrown upward at \(20 \text{ m/s}\). What is the maximum height?</p>
-                <button onclick="toggleSolution('q25d')">Show Solution</button>
-                <div id="q25d" class="solution">
-                    $$ h = \frac{v^2}{2g} = \frac{400}{20} = 20 \text{ m} $$
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q25e:</strong> A \(4 \text{ kg}\) object falls from \(10 \text{ m}\). What is its KE when
-                    it's \(5 \text{ m}\) above ground?</p>
-                <button onclick="toggleSolution('q25e')">Show Solution</button>
-                <div id="q25e" class="solution">
-                    After falling 5 m: $$ K = mgh = 4(10)(5) = 200 \text{ J} $$
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q25f:</strong> A spring with \(k=800\) N/m compressed \(0.1 \text{ m}\) launches a \(0.2
-                    \text{ kg}\) ball. What is its speed?</p>
-                <button onclick="toggleSolution('q25f')">Show Solution</button>
-                <div id="q25f" class="solution">
-                    $$ \frac{1}{2}kx^2 = \frac{1}{2}mv^2 $$
-                    $$ v = \sqrt{\frac{kx^2}{m}} = \sqrt{\frac{8}{0.2}} = \sqrt{40} = 6.3 \text{ m/s} $$
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q25g:</strong> An object slides down a frictionless incline. Does it reach the same height on
-                    the other side?</p>
-                <button onclick="toggleSolution('q25g')">Show Solution</button>
-                <div id="q25g" class="solution">
-                    <strong>Yes.</strong> Conservation of mechanical energy ensures it returns to the same height.
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q25h:</strong> In Q25g, if there's friction, what happens?</p>
-                <button onclick="toggleSolution('q25h')">Show Solution</button>
-                <div id="q25h" class="solution">
-                    <strong>It doesn't reach the same height.</strong> Some energy is converted to heat.
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q25i:</strong> An elevator falls from \(25 \text{ m}\). What is its speed before impact?</p>
-                <button onclick="toggleSolution('q25i')">Show Solution</button>
-                <div id="q25i" class="solution">
-                    $$ v = \sqrt{2(10)(25)} = \sqrt{500} \approx 22.4 \text{ m/s} $$
-                </div>
-            </div>
-            <div class="example">
-                <p><strong>Q25j:</strong> An arrow is shot from a bow at \(50 \text{ m/s}\). What is the maximum height
-                    if shot vertically?</p>
-                <button onclick="toggleSolution('q25j')">Show Solution</button>
-                <div id="q25j" class="solution">
-                    $$ h = \frac{v^2}{2g} = \frac{2500}{20} = 125 \text{ m} $$
-                </div>
-            </div>
-
-            <div class="subsection">
-                <h3>🛡️ Topic 6: Conservative Forces & Equilibrium</h3>
-                <div class="example">
-                    <p><strong>Q26:</strong> If the work done by a force depends on the path taken, is the force
-                        conservative?</p>
-                    <button onclick="toggleSolution('q26')">Show Solution</button>
-                    <div id="q26" class="solution">
-                        <strong>No.</strong> This is the definition of a <strong>Nonconservative</strong> force.
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q27:</strong> Given \(U(x)\), how do you find the force \(F(x)\)?</p>
-                    <button onclick="toggleSolution('q27')">Show Solution</button>
-                    <div id="q27" class="solution">
-                        Take the negative derivative: \(F(x) = - \frac{dU}{dx}\).
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q28:</strong> At a point of stable equilibrium, is potential energy at a minimum
-                        or maximum?</p>
-                    <button onclick="toggleSolution('q28')">Show Solution</button>
-                    <div id="q28" class="solution">
-                        <strong>Minimum.</strong> Like a ball at the bottom of a valley.
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q29:</strong> If a particle is at equilibrium, what is the net force on it?</p>
-                    <button onclick="toggleSolution('q29')">Show Solution</button>
-                    <div id="q29" class="solution">
-                        <strong>Zero.</strong> Equilibrium implies \(F = 0\) (or slope of \(U\) is zero).
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q30:</strong> A force does zero work on a round trip. What kind of force is it?
-                    </p>
-                    <button onclick="toggleSolution('q30')">Show Solution</button>
-                    <div id="q30" class="solution">
-                        <strong>Conservative Force.</strong>
-                    </div>
-                </div>
-            </div>
-            <!-- New Topic 6 Questions -->
-            <div class="example">
-                <p><strong>Q30a:</strong> The diagram shows a \(U(x)\) curve. Identify the stable and unstable
-                    equilibrium points.</p>
-                <div class="diagram">
-                    <img src="potential_energy_curve_1767723273886.png" alt="Potential Energy Curve"
-                        style="max-width: 100%; border-radius: 10px;">
-                </div>
-                <button onclick="toggleSolution('q30a')">Show Solution</button>
-                <div id="q30a" class="solution">
-                    <strong>Stable:</strong> Valleys (minima) - where \(dU/dx = 0\) and \(d^2U/dx^2 > 0\)<br>
-                    <strong>Unstable:</strong> Peaks (maxima) - where \(dU/dx = 0\) and \(d^2U/dx^2 < 0\) </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q30b:</strong> If \(U(x) = 4x^2 - 2x^4\), find the force \(F(x)\).</p>
-                    <button onclick="toggleSolution('q30b')">Show Solution</button>
-                    <div id="q30b" class="solution">
-                        $$ F(x) = -\frac{dU}{dx} = -(8x - 8x^3) = 8x^3 - 8x $$
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q30c:</strong> An object moves between two points via two different paths. Is the work
-                        done by gravity (A) the same or (B) different?</p>
-                    <button onclick="toggleSolution('q30c')">Show Solution</button>
-                    <div id="q30c" class="solution">
-                        <strong>(A) The same.</strong> Gravity is a conservative force; its work depends only on the
-                        endpoints.
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q30d:</strong> What is the condition for equilibrium in terms of \(U(x)\)?</p>
-                    <button onclick="toggleSolution('q30d')">Show Solution</button>
-                    <div id="q30d" class="solution">
-                        $$ \frac{dU}{dx} = 0 $$
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q30e:</strong> If \(U = 5x^2\), what type of equilibrium exists at \(x = 0\)?</p>
-                    <button onclick="toggleSolution('q30e')">Show Solution</button>
-                    <div id="q30e" class="solution">
-                        <strong>Stable.</strong> Since \(d^2U/dx^2 = 10 > 0\) (minimum).
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q30f:</strong> Is friction a conservative force? Why?</p>
-                    <button onclick="toggleSolution('q30f')">Show Solution</button>
-                    <div id="q30f" class="solution">
-                        <strong>No.</strong> Friction's work depends on the path and converts energy to heat.
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q30g:</strong> An object slides from A to B and back. If it loses 20% of its energy to
-                        friction, what is its final height if it started from \(h\)?</p>
-                    <button onclick="toggleSolution('q30g')">Show Solution</button>
-                    <div id="q30g" class="solution">
-                        $$ h_{final} = 0.8h $$
+                    <div class="key-point">
+                        <ul>
+                            <li><strong>Steep slope (large \(dU/dx\))</strong> → Strong force</li>
+                            <li><strong>Flat slope (\(dU/dx = 0\))</strong> → Zero force (Equilibrium)</li>
+                            <li><strong>Positive slope</strong> → Force is negative (pushes left)</li>
+                            <li><strong>Negative slope</strong> → Force is positive (pushes right)</li>
+                        </ul>
                     </div>
                 </div>
 
                 <div class="subsection">
-                    <h3>📊 Topic 7: Graph-Based Problems</h3>
-                    <div class="example">
-                        <p><strong>Q31:</strong> An object moving along the x-axis is acted upon by a force \(F_x\) that
-                            varies with position as shown. How much work is done by this force as the object moves from
-                            \(x = 2 \text{ m}\) to \(x = 8 \text{ m}\)?</p>
-                        <div class="diagram">
-                            <img src="fx_graph_q31.png" alt="Force vs Position Graph"
-                                style="max-width: 100%; border-radius: 10px;">
+                    <h3>⚖️ Types of Equilibrium</h3>
+                    <table>
+                        <tr>
+                            <th>Type</th>
+                            <th>Condition</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td><strong>Stable</strong></td>
+                            <td>\(\frac{dU}{dx} = 0\), \(U\) is min (valley)</td>
+                            <td>System returns to position if displaced (like a ball in a bowl).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Unstable</strong></td>
+                            <td>\(\frac{dU}{dx} = 0\), \(U\) is max (peak)</td>
+                            <td>System speeds away if displaced (like a ball on a hill).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Neutral</strong></td>
+                            <td>\(\frac{dU}{dx} = 0\), \(U\) is constant</td>
+                            <td>System stays put if displaced (ball on flat table).</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="example">
+                    <h4>📖 Example 9: Lennard-Jones Potential</h4>
+                    <p>The potential energy between two atoms in a molecule is often modeled as:</p>
+                    <div class="formula">
+                        $$ U(r) = \frac{A}{r^{12}} - \frac{B}{r^6} $$
+                    </div>
+                    <p>The force is \(F(r) = -dU/dr\). The atoms settle at the distance \(r\) where force is zero
+                        (minimum \(U\)) -
+                        this is the bond length!</p>
+                </div>
+
+                <div class="example">
+                    <h4>📖 Example 14: Force from PE Function</h4>
+                    <p><strong>Problem:</strong> Given \(U(x) = 3x^2 - 2x\) J, find (a) the force at x = 2 m, and (b)
+                        equilibrium positions.</p>
+                    <button onclick="toggleSolution('sol14')">Show Solution</button>
+                    <div id="sol14" class="solution">
+                        <div class="step">
+                            <strong>(a) Find the force:</strong><br>
+                            $$ F = -\frac{dU}{dx} = -\frac{d}{dx}(3x^2 - 2x) = -(6x - 2) = 2 - 6x $$
+                            At x = 2 m: \(F = 2 - 6(2) = -10\) N
                         </div>
-                        <p><strong>Options:</strong></p>
-                        <ul>
-                            <li>A. +50 J</li>
-                            <li>B. Zero</li>
-                            <li>C. -30 J</li>
-                            <li>D. +30 J</li>
-                            <li>E. +40 J</li>
-                        </ul>
-                        <button onclick="toggleSolution('q31')">Show Solution</button>
-                        <div id="q31" class="solution">
-                            <div class="step">
-                                <strong>Concept:</strong> Work = Area under the \(F_x\) vs \(x\) curve. Areas above the
-                                axis are positive, areas below are negative.
-                            </div>
-                            <div class="step">
-                                <strong>Method 1: Calculate Areas</strong><br>
-                                • <strong>Region 1</strong> (from \(x=2\) to \(x=6\)): Triangle above the axis<br>
-                                $$ W_1 = \frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2}(4)(20) = +40
-                                \text{ J} $$
-                                • <strong>Region 2</strong> (from \(x=6\) to \(x=8\)): Triangle below the axis<br>
-                                $$ W_2 = \frac{1}{2}(2)(10) = -10 \text{ J} $$
-                            </div>
-                            <div class="step">
-                                <strong>Method 2: Trapezoid</strong><br>
-                                Calculate total area as a trapezoid from x=2 to x=8:<br>
-                                Positive area (from x=2 to x=6) = 40 J<br>
-                                Negative area (from x=6 to x=8) = -10 J
-                            </div>
-                            <div class="step">
-                                <strong>Total Work:</strong><br>
-                                $$ W_{\text{total}} = W_1 + W_2 = 40 + (-10) = +30 \text{ J} $$
-                            </div>
-                            <div class="important">
-                                <strong>Answer: D. +30 J ✓</strong>
-                            </div>
+                        <div class="step">
+                            <strong>(b) Equilibrium:</strong><br>
+                            Set F = 0: \(2 - 6x = 0 \Rightarrow x = \frac{1}{3}\) m<br>
+                            Since \(\frac{d^2U}{dx^2} = 6 > 0\), this is a <strong>stable equilibrium</strong>.
                         </div>
                     </div>
                 </div>
-                <!-- New Topic 7 Questions -->
+
                 <div class="example">
-                    <p><strong>Q31a:</strong> From the triangular F-x graph, calculate the work from \(x=0\) to \(x=8\).
-                    </p>
-                    <div class="diagram">
-                        <img src="fx_graph_triangle_1767723251135.png" alt="Triangle F-x Graph"
-                            style="max-width: 100%; border-radius: 10px;">
-                    </div>
-                    <button onclick="toggleSolution('q31a')">Show Solution</button>
-                    <div id="q31a" class="solution">
-                        Area = Triangle: $$ W = \frac{1}{2} \times 8 \times 30 = 120 \text{ J} $$
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q31b:</strong> A constant force \(F = 10 \text{ N}\) acts from \(x=0\) to \(x=5\). What
-                        is the work?</p>
-                    <button onclick="toggleSolution('q31b')">Show Solution</button>
-                    <div id="q31b" class="solution">
-                        $$ W = F \cdot d = 10 \times 5 = 50 \text{ J} $$
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q31c:</strong> Rectangular F-x curve: \(F=20\) N from \(x=2\) to \(x=7\). What is the
-                        work?</p>
-                    <button onclick="toggleSolution('q31c')">Show Solution</button>
-                    <div id="q31c" class="solution">
-                        $$ W = 20 \times 5 = 100 \text{ J} $$
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q31d:</strong> A U-x graph shows a minimum at \(x=3\). What is the direction of the force
-                        at \(x=2\)?</p>
-                    <button onclick="toggleSolution('q31d')">Show Solution</button>
-                    <div id="q31d" class="solution">
-                        <strong>Forward (+x).</strong> The slope is negative, so \(F = -dU/dx > 0\)
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q31e:</strong> A U-x graph: \(U\) decreases from \(x=0\) to \(x=5\). What is the force
-                        direction?</p>
-                    <button onclick="toggleSolution('q31e')">Show Solution</button>
-                    <div id="q31e" class="solution">
-                        <strong>Positive (+x).</strong> Because the slope is negative.
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q31f:</strong> Trapezoid: \(F=0\) at \(x=0\), \(F=20\) at \(x=4\), \(F=20\) at \(x=8\),
-                        \(F=0\) at \(x=12\). What is the total work?</p>
-                    <button onclick="toggleSolution('q31f')">Show Solution</button>
-                    <div id="q31f" class="solution">
-                        $$ W = \frac{1}{2}(4)(20) + (4)(20) + \frac{1}{2}(4)(20) = 40 + 80 + 40 = 160 \text{ J} $$
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q31g:</strong> A spring is compressed gradually. If \(F = kx\) and \(k=100\) N/m, what is
-                        the work to compress it by \(0.5 \text{ m}\)?</p>
-                    <button onclick="toggleSolution('q31g')">Show Solution</button>
-                    <div id="q31g" class="solution">
-                        Area under straight line: $$ W = \frac{1}{2}(0.5)(50) = 12.5 \text{ J} $$
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q31h:</strong> Negative F-x curve (below axis): \(F=-15\) N from \(x=3\) to \(x=6\). What
-                        is the work?</p>
-                    <button onclick="toggleSolution('q31h')">Show Solution</button>
-                    <div id="q31h" class="solution">
-                        $$ W = -15 \times 3 = -45 \text{ J} $$
-                    </div>
-                </div>
-                <div class="example">
-                    <p><strong>Q31i:</strong> A K-x graph shows KE is constant. What is the total work on the object?
-                    </p>
-                    <button onclick="toggleSolution('q31i')">Show Solution</button>
-                    <div id="q31i" class="solution">
-                        <strong>Zero.</strong> \(W_{net} = \Delta K = 0\)
+                    <h4>📖 Example 15: Spring Equilibrium Analysis</h4>
+                    <p><strong>Problem:</strong> For a spring \(U = \frac{1}{2}kx^2\), prove x = 0 is stable
+                        equilibrium.</p>
+                    <button onclick="toggleSolution('sol15')">Show Solution</button>
+                    <div id="sol15" class="solution">
+                        <div class="step">
+                            <strong>Step 1: Find F(x):</strong><br>
+                            $$ F = -\frac{dU}{dx} = -\frac{d}{dx}\left(\frac{1}{2}kx^2\right) = -kx $$
+                        </div>
+                        <div class="step">
+                            <strong>Step 2: Check equilibrium:</strong><br>
+                            At x = 0: F = 0 ✓ (equilibrium point)
+                        </div>
+                        <div class="step">
+                            <strong>Step 3: Check stability:</strong><br>
+                            $$ \frac{d^2U}{dx^2} = k > 0 $$
+                            Positive second derivative → minimum → <strong>Stable!</strong>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <script>
-        // Navigation
-        function showSection(index) {
-            const sections = document.querySelectorAll('.section');
-            const buttons = document.querySelectorAll('.nav-btn');
+            <!-- Summary -->
+            <div class="section">
+                <h2 class="section-title">📝 Chapter Summary & Practice</h2>
 
-            sections.forEach(s => s.classList.remove('active'));
-            buttons.forEach(b => b.classList.remove('active'));
+                <div class="subsection">
+                    <h3>🔑 Key Formulas</h3>
+                    <ul>
+                        <li>Work (Constant Force): \(W = F d \cos(\theta)\)</li>
+                        <li>Scalar Product: \(\mathbf{A} \cdot \mathbf{B} = AB \cos(\theta) = A_x B_x + A_y B_y\)
+                        </li>
+                        <li>Hooke's Law: \(F_s = -kx\)</li>
+                        <li>Work (Spring): \(W_s = -\frac{1}{2}k(x_f^2 - x_i^2)\)</li>
+                        <li>Kinetic Energy: \(K = \frac{1}{2}mv^2\)</li>
+                        <li>Work-KE Theorem: \(W_{\text{net}} = \Delta K\)</li>
+                        <li>Gravitational PE: \(U_g = mgy\)</li>
+                        <li>Elastic PE: \(U_s = \frac{1}{2}kx^2\)</li>
+                        <li>Conservation: \(E_i = E_f\) (if no nonconservative forces)</li>
+                        <li>Force from PE: \(F_x = -dU/dx\)</li>
+                    </ul>
+                </div>
 
-            sections[index].classList.add('active');
-            buttons[index].classList.add('active');
+                <div class="subsection">
+                    <h3>🧩 Topic 1: Systems & Energy Types</h3>
+                    <div class="example">
+                        <p><strong>Q1:</strong> A cyclist moves down a hill. If we define the system as "Cyclist +
+                            Earth", is the gravitational force an external or internal force?</p>
+                        <button onclick="toggleSolution('q1')">Show Solution</button>
+                        <div id="q1" class="solution">
+                            <strong>Internal.</strong> Since the Earth is part of the system, the interaction
+                            between
+                            the Earth and the cyclist (gravity) is internal.
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q2:</strong> Identify the energy transformation: A battery-operated toy car
+                            accelerates up a ramp.</p>
+                        <button onclick="toggleSolution('q2')">Show Solution</button>
+                        <div id="q2" class="solution">
+                            Chemical Potential Energy (Battery) → Electrical Energy → Kinetic Energy (Motion) +
+                            Gravitational Potential Energy (Height) + Thermal Energy (Friction).
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q3:</strong> True or False: A system can have potential energy even if it
+                            consists of
+                            only a single isolated particle.</p>
+                        <button onclick="toggleSolution('q3')">Show Solution</button>
+                        <div id="q3" class="solution">
+                            <strong>False.</strong> Potential energy exists only between interacting objects (like
+                            Earth
+                            + Stone). A single particle can only have Kinetic Energy or Rest Energy.
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q4:</strong> Which of the following is NOT a unit of energy? (a) Joule (b)
+                            Newton-meter (c) Watt (d) \(\text{kg} \cdot \text{m}^2/\text{s}^2\)</p>
+                        <button onclick="toggleSolution('q4')">Show Solution</button>
+                        <div id="q4" class="solution">
+                            <strong>(c) Watt.</strong> Watt is a unit of Power (Joules per second). All others are
+                            units
+                            of Energy.
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q5:</strong> If the environment does positive work on a system, what happens to
+                            the
+                            system's total energy?</p>
+                        <button onclick="toggleSolution('q5')">Show Solution</button>
+                        <div id="q5" class="solution">
+                            Since \(W_{\text{ext}} = \Delta E_{\text{sys}}\), positive work increases the total
+                            energy
+                            of the system.
+                        </div>
+                    </div>
+                </div>
+                <div class="example">
+                    <p><strong>Q5a:</strong> A rocket burns fuel in space. Define the system as "rocket + exhaust
+                        gases".
+                        What energy transformation occurs?</p>
+                    <button onclick="toggleSolution('q5a')">Show Solution</button>
+                    <div id="q5a" class="solution">
+                        <strong>Chemical PE → Kinetic Energy.</strong> The chemical energy stored in the fuel is
+                        converted
+                        to kinetic energy of both the rocket and exhaust gases. Since the system includes both,
+                        momentum
+                        is
+                        conserved internally.
+                    </div>
+                </div>
+                <div class="example">
+                    <p><strong>Q5b:</strong> A compressed spring is placed between two carts on a frictionless
+                        surface
+                        and
+                        released. If the system is "both carts + spring", is the spring's force internal or
+                        external?
+                    </p>
+                    <button onclick="toggleSolution('q5b')">Show Solution</button>
+                    <div id="q5b" class="solution">
+                        <strong>Internal.</strong> The spring is part of the system, so any force it exerts is an
+                        internal
+                        force.
+                    </div>
+                </div>
+                <div class="example">
+                    <p><strong>Q5c:</strong> Which represents energy <em>transfer</em>, not transformation?<br>
+                        (a) A ball falling<br>
+                        (b) A hot object warming a cold one<br>
+                        (c) A battery powering a motor<br>
+                        (d) A spring launching a ball</p>
+                    <button onclick="toggleSolution('q5c')">Show Solution</button>
+                    <div id="q5c" class="solution">
+                        <strong>(b) A hot object warming a cold one.</strong> This is heat transfer between objects,
+                        not
+                        energy transformation.
+                    </div>
+                </div>
+                <div class="example">
+                    <p><strong>Q5d:</strong> A system loses \(50 \text{ J}\) of energy to the environment. What is
+                        \(W_{\text{env}}\)?</p>
+                    <button onclick="toggleSolution('q5d')">Show Solution</button>
+                    <div id="q5d" class="solution">
+                        \(W_{\text{env}} = \Delta E_{\text{sys}} = -50 \text{ J}\). Negative work means energy
+                        leaves
+                        the
+                        system.
+                    </div>
+                </div>
+                <div class="example">
+                    <p><strong>Q5e:</strong> In a car crash, KE is mainly converted to:<br>
+                        (a) Gravitational PE (b) Elastic PE (c) Internal Energy + Sound (d) Chemical Energy</p>
+                    <button onclick="toggleSolution('q5e')">Show Solution</button>
+                    <div id="q5e" class="solution">
+                        <strong>(c) Internal Energy + Sound.</strong> The kinetic energy goes into deforming metal
+                        (internal
+                        energy), heating, and sound.
+                    </div>
+                </div>
 
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
+                <div class="subsection">
+                    <h3>📐 Topic 2: Work (Constant Force) & Dot Products</h3>
+                    <div class="example">
+                        <p><strong>Q6:</strong> Calculate the work done by a force \(F = 20 \text{ N}\) pushing a
+                            box
+                            \(3 \text{ m}\) across a floor at an angle of \(60^\circ\) below the horizontal.</p>
+                        <button onclick="toggleSolution('q6')">Show Solution</button>
+                        <div id="q6" class="solution">
+                            $$ W = F d \cos(\theta) = 20(3) \cos(60^\circ) = 60(0.5) = 30 \text{ J} $$
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q7:</strong> A waiter carries a tray of food across a room at constant velocity.
+                            Is
+                            the waiter doing work on the tray?</p>
+                        <button onclick="toggleSolution('q7')">Show Solution</button>
+                        <div id="q7" class="solution">
+                            <strong>No.</strong> The force (Normal force) is vertical (up), while the displacement
+                            is
+                            horizontal. Since \(\theta = 90^\circ\), \(W = F d \cos(90^\circ) = 0\).
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q8:</strong> Calculate the dot product of \(\mathbf{A} = 3\mathbf{\hat{i}} +
+                            2\mathbf{\hat{j}}\) and \(\mathbf{B} = -1\mathbf{\hat{i}} + 4\mathbf{\hat{j}}\).</p>
+                        <button onclick="toggleSolution('q8')">Show Solution</button>
+                        <div id="q8" class="solution">
+                            $$ \mathbf{A} \cdot \mathbf{B} = (3)(-1) + (2)(4) = -3 + 8 = 5 $$
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q9:</strong> If \(\mathbf{A} \cdot \mathbf{B} = 0\) and neither vector is zero,
+                            what
+                            is the geometric relationship between them?</p>
+                        <button onclick="toggleSolution('q9')">Show Solution</button>
+                        <div id="q9" class="solution">
+                            They are <strong>perpendicular</strong> (orthogonal), because \(\cos(90^\circ) = 0\).
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q10:</strong> A force \(\mathbf{F} = (4\mathbf{\hat{i}} + 3\mathbf{\hat{j}})
+                            \text{
+                            N}\) moves a particle from origin to \(\mathbf{r} = (2\mathbf{\hat{i}}) \text{ m}\).
+                            Find
+                            the work done.</p>
+                        <button onclick="toggleSolution('q10')">Show Solution</button>
+                        <div id="q10" class="solution">
+                            Displacement \(\mathbf{d} = 2\mathbf{\hat{i}}\) (no y-component).<br>
+                            \(W = F_x d_x + F_y d_y = (4)(2) + (3)(0) = 8 \text{ J}\).
+                        </div>
+                    </div>
+                </div>
 
-        // Toggle Solutions
-        function toggleSolution(id) {
-            const solution = document.getElementById(id);
-            solution.classList.toggle('show');
-        }
+                <!-- New Topic 2 Questions with Diagrams -->
+                <div class="example">
+                    <p><strong>Q10a:</strong> A box on a \(30^\circ\) incline has mass \(10 \text{ kg}\). What is
+                        the
+                        work
+                        done
+                        by gravity if it slides \(5 \text{ m}\) down the incline?</p>
+                    <div class="diagram">
+                        <img src="inclined_plane_forces_1767723092991.png" alt="Inclined Plane"
+                            style="max-width: 100%; border-radius: 10px;">
+                    </div>
+                    <button onclick="toggleSolution('q10a')">Show Solution</button>
+                    <div id="q10a" class="solution">
+                        $$ W = mg\sin(30^\circ) \cdot d = 10(10)(0.5)(5) = 250 \text{ J} $$
+                    </div>
+                </div>
+                <div class="example">
+                    <p><strong>Q10b:</strong> In Q10a, if \(\mu_k = 0.2\), what is the work done by friction?</p>
+                    <button onclick="toggleSolution('q10b')">Show Solution</button>
+                    <div id="q10b" class="solution">
+                        \(N = mg\cos(30^\circ) = 86.6 \text{ N}\)<br>
+                        $$ W_f = -\mu_k N \cdot d = -17.32(5) = -86.6 \text{ J} $$
+                    </div>
+                </div>
+                <div class="example">
+                    <p><strong>Q10c:</strong> A box is pulled at \(37^\circ\) above horizontal with force \(50
+                        \text{
+                        N}\)
+                        over
+                        \(8 \text{ m}\). What is the work done?</p>
+                    <div class="diagram">
+                        <img src="pulling_box_angle_1767723121024.png" alt="Pulling at Angle"
+                            style="max-width: 100%; border-radius: 10px;">
+                    </div>
+                    <button onclick="toggleSolution('q10c')">Show Solution</button>
+                    <div id="q10c" class="solution">
+                        $$ W = 50(8)\cos(37^\circ) = 320 \text{ J} $$
+                    </div>
+                </div>
+                <div class="example">
+                    <p><strong>Q10d:</strong> What force is needed to pull a \(20 \text{ kg}\) box at constant
+                        velocity
+                        if
+                        \(\mu_k = 0.25\)?</p>
+                    <button onclick="toggleSolution('q10d')">Show Solution</button>
+                    <div id="q10d" class="solution">
+                        $$ F = \mu_k mg = 0.25(20)(10) = 50 \text{ N} $$
+                    </div>
+                </div>
+                <div class="example">
+                    <p><strong>Q10e:</strong> Given \(\vec{F} = 5\hat{i} - 3\hat{j} + 2\hat{k}\) N and \(\vec{d} =
+                        2\hat{i}
+                        +
+                        4\hat{j} - \hat{k}\) m, find the work done.</p>
+                    <button onclick="toggleSolution('q10e')">Show Solution</button>
+                    <div id="q10e" class="solution">
+                        $$ W = 10 - 12 - 2 = -4 \text{ J} $$
+                    </div>
+                </div>
+                <div class="example">
+                    <p><strong>Q10f:</strong> An object moves in uniform circular motion. What is the work done by
+                        the
+                        centripetal force?</p>
+                    <button onclick="toggleSolution('q10f')">Show Solution</button>
+                    <div id="q10f" class="solution">
+                        <strong>Zero.</strong> The force is always perpendicular to the displacement.
+                    </div>
+                </div>
+                <div class="example">
+                    <p><strong>Q10g:</strong> An elevator of mass \(500 \text{ kg}\) rises \(20 \text{ m}\) at
+                        constant
+                        speed.
+                        What is the work done by the cable?</p>
+                    <button onclick="toggleSolution('q10g')">Show Solution</button>
+                    <div id="q10g" class="solution">
+                        $$ W = 500(10)(20) = 100 \text{ kJ} $$
+                    </div>
+                </div>
+                <div class="example">
+                    <p><strong>Q10h:</strong> \(\theta = 120^\circ\), \(|A| = 6\), \(|B| = 4\). Find \(\vec{A} \cdot
+                        \vec{B}\)?
+                    </p>
+                    <button onclick="toggleSolution('q10h')">Show Solution</button>
+                    <div id="q10h" class="solution">
+                        $$ \vec{A} \cdot \vec{B} = 24\cos(120^\circ) = -12 $$
+                    </div>
+                </div>
+                <div class="example">
+                    <p><strong>Q10i:</strong> A crane lifts \(200 \text{ kg}\) with acceleration \(2 \text{ m/s}^2\)
+                        through
+                        \(15 \text{ m}\). What is the work done?</p>
+                    <button onclick="toggleSolution('q10i')">Show Solution</button>
+                    <div id="q10i" class="solution">
+                        $$ W = m(g+a)d = 200(12)(15) = 36 \text{ kJ} $$
+                    </div>
+                </div>
+                <div class="example">
+                    <p><strong>Q10j:</strong> A force of \(100 \text{ N}\) acts over \(10 \text{ m}\) and does \(500
+                        \text{
+                        J}\)
+                        of work. What is the angle between force and displacement?</p>
+                    <button onclick="toggleSolution('q10j')">Show Solution</button>
+                    <div id="q10j" class="solution">
+                        $$ \theta = \cos^{-1}(0.5) = 60^\circ $$
+                    </div>
+                </div>
 
-        // Draw Work Diagram (Section 7.2)
-        const workCanvas = document.getElementById('workCanvas');
-        if (workCanvas) {
-            const ctx = workCanvas.getContext('2d');
+                <div class="subsection">
+                    <h3>🌀 Topic 3: Springs & Variable Forces</h3>
+                    <div class="example">
+                        <p><strong>Q11:</strong> A spring with \(k = 200 \text{ N/m}\) is stretched \(0.1 \text{
+                            m}\).
+                            What force does the spring exert?</p>
+                        <button onclick="toggleSolution('q11')">Show Solution</button>
+                        <div id="q11" class="solution">
+                            Magnitude \(|F_s| = kx = 200(0.1) = 20 \text{ N}\). Direction is opposite to stretch.
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q12:</strong> How much work is required to stretch the spring in Q11 from
+                            equilibrium
+                            to \(0.1 \text{ m}\)?</p>
+                        <button onclick="toggleSolution('q12')">Show Solution</button>
+                        <div id="q12" class="solution">
+                            External work is equal to stored PE: \(W_{\text{ext}} = \frac{1}{2}kx^2 =
+                            0.5(200)(0.1)^2 =
+                            100(0.01) = 1 \text{ J}\).
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q13:</strong> If you stretch a spring twice as far (from \(x\) to \(2x\)), how
+                            much
+                            more potential energy is stored?</p>
+                        <button onclick="toggleSolution('q13')">Show Solution</button>
+                        <div id="q13" class="solution">
+                            Since \(U_s \propto x^2\), doubling \(x\) means \((2x)^2 = 4x^2\). The energy increases
+                            by a
+                            factor of <strong>4</strong>.
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q14:</strong> The area under a Force vs. Position graph represents what quantity?
+                        </p>
+                        <button onclick="toggleSolution('q14')">Show Solution</button>
+                        <div id="q14" class="solution">
+                            <strong>Work done</strong> by the force.
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q15:</strong> A spring is compressed by \(x\). Does the spring do positive or
+                            negative work on the block compressing it?</p>
+                        <button onclick="toggleSolution('q15')">Show Solution</button>
+                        <div id="q15" class="solution">
+                            <strong>Negative.</strong> The spring pushes outwards (opposing motion) while the block
+                            moves inwards (compression). Force and displacement are opposite.
+                        </div>
+                    </div>
+                </div>
+                <!-- New Topic 3 Questions -->
+                <div class="example">
+                    <p><strong>Q15a:</strong> Two springs in parallel have \(k_1 = 100\) N/m and \(k_2 = 200 \text{
+                        N/m}\).
+                        What
+                        is the equivalent spring constant?</p>
+                    <div class="diagram">
+                        <img src="spring_systems_1767723147646.png" alt="Spring Systems"
+                            style="max-width: 100%; border-radius: 10px;">
+                    </div>
+                    <button onclick="toggleSolution('q15a')">Show Solution</button>
+                    <div id="q15a" class="solution">
+                        $$ k_{eq} = k_1 + k_2 = 300 \text{ N/m} $$
+                    </div>
+                </div>
+                <div class="example">
+                    <p><strong>Q15b:</strong> Two springs in series have \(k_1 = 100\) N/m and \(k_2 = 200 \text{
+                        N/m}\).
+                        What
+                        is the equivalent spring constant?</p>
+                    <button onclick="toggleSolution('q15b')">Show Solution</button>
+                    <div id="q15b" class="solution">
+                        $$ k_{eq} = \frac{k_1 k_2}{k_1 + k_2} = 66.7 \text{ N/m} $$
+                    </div>
+                </div>
+                <div class="example">
+                    <p><strong>Q15c:</strong> A spring with \(k = 500 \text{ N/m}\) is compressed by \(0.2 \text{
+                        m}\).
+                        What
+                        is
+                        the stored potential energy?</p>
+                    <button onclick="toggleSolution('q15c')">Show Solution</button>
+                    <div id="q15c" class="solution">
+                        $$ U_s = \frac{1}{2}(500)(0.2)^2 = 10 \text{ J} $$
+                    </div>
+                </div>
+                <div class="example">
+                    <p><strong>Q15d:</strong> A variable force \(F(x) = 3x^2\) acts from \(x=0\) to \(x=2\) m. What
+                        is
+                        the
+                        work
+                        done?</p>
+                    <button onclick="toggleSolution('q15d')">Show Solution</button>
+                    <div id="q15d" class="solution">
+                        $$ W = \int_0^2 3x^2 dx = 8 \text{ J} $$
+                    </div>
+                </div>
+                <div class="example">
+                    <p><strong>Q15e:</strong> A spring is stretched from \(x_1=0.1\) m to \(x_2=0.3\) m, with
+                        \(k=400\)
+                        N/m.
+                        What is the work done by the spring?</p>
+                    <button onclick="toggleSolution('q15e')">Show Solution</button>
+                    <div id="q15e" class="solution">
+                        $$ W_s = \frac{1}{2}k(x_1^2 - x_2^2) = -16 \text{ J} $$
+                    </div>
+                </div>
+                <div class="example">
+                    <p><strong>Q15f:</strong> A \(0.5 \text{ kg}\) mass hangs from a vertical spring and settles at
+                        \(x=0.05\)
+                        m. What is \(k\)?</p>
+                    <button onclick="toggleSolution('q15f')">Show Solution</button>
+                    <div id="q15f" class="solution">
+                        $$ k = \frac{mg}{x} = 100 \text{ N/m} $$
+                    </div>
+                </div>
+                <div class="example">
+                    <p><strong>Q15g:</strong> An F-x graph shows force increasing linearly from 0 to 40 N over 10 m.
+                        What is
+                        the
+                        work done?</p>
+                    <div class="diagram">
+                        <img src="fx_graph_linear_increase_1767723227495.png" alt="F-x Graph"
+                            style="max-width: 100%; border-radius: 10px;">
+                    </div>
+                    <button onclick="toggleSolution('q15g')">Show Solution</button>
+                    <div id="q15g" class="solution">
+                        $$ W = \frac{1}{2}(10)(40) = 200 \text{ J} $$
+                    </div>
+                </div>
 
-            // Draw three scenarios
-            const scenarios = [
-                { x: 100, angle: 0, label: 'θ = 0°', work: 'Max +' },
-                { x: 300, angle: Math.PI / 4, label: 'θ = 45°', work: 'Partial +' },
-                { x: 500, angle: Math.PI / 2, label: 'θ = 90°', work: 'Zero' }
-            ];
+                <div class="subsection">
+                    <h3>🏃 Topic 4: Kinetic Energy & Work-KE Theorem</h3>
+                    <div class="example">
+                        <p><strong>Q16:</strong> If the speed of a car doubles, its kinetic energy increases by what
+                            factor?</p>
+                        <button onclick="toggleSolution('q16')">Show Solution</button>
+                        <div id="q16" class="solution">
+                            Since \(K \propto v^2\), doubling speed (\(2v\)) leads to \((2v)^2 = 4v^2\). Factor of
+                            <strong>4</strong>.
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q17:</strong> Can kinetic energy ever be negative?</p>
+                        <button onclick="toggleSolution('q17')">Show Solution</button>
+                        <div id="q17" class="solution">
+                            <strong>No.</strong> Mass is positive and \(v^2\) is always positive (or zero).
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q18:</strong> A net force of \(10 \text{ N}\) acts on a \(2 \text{ kg}\) object
+                            over
+                            \(5 \text{ m}\). What is the change in Kinetic Energy?</p>
+                        <button onclick="toggleSolution('q18')">Show Solution</button>
+                        <div id="q18" class="solution">
+                            By Work-KE Theorem: \(\Delta K = W_{\text{net}} = F d = 10(5) = 50 \text{ J}\).
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q19:</strong> Two identical cars travel at the same speed. One heads North, one
+                            heads
+                            East. Do they have the same Kinetic Energy?</p>
+                        <button onclick="toggleSolution('q19')">Show Solution</button>
+                        <div id="q19" class="solution">
+                            <strong>Yes.</strong> KE depends on speed (scalar), not velocity (vector). Direction
+                            doesn't
+                            matter.
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q20:</strong> A particle moving at \(5 \text{ m/s}\) is brought to rest by a net
+                            work
+                            \(W\). Is \(W\) positive or negative?</p>
+                        <button onclick="toggleSolution('q20')">Show Solution</button>
+                        <div id="q20" class="solution">
+                            <Strong>Negative.</Strong> Final KE is lower than Initial KE, so \(\Delta K < 0\), implying
+                                \(W_{\text{net}} < 0\). </div>
+                        </div>
+                    </div>
+                    <!-- New Topic 4 Questions -->
+                    <div class="example">
+                        <p><strong>Q20a:</strong> A roller coaster starts from point A (h=20m) with no initial
+                            speed.
+                            What
+                            is
+                            its speed at point B (h=0)?</p>
+                        <div class="diagram">
+                            <img src="roller_coaster_energy_1767723175740.png" alt="Roller Coaster"
+                                style="max-width: 100%; border-radius: 10px;">
+                        </div>
+                        <button onclick="toggleSolution('q20a')">Show Solution</button>
+                        <div id="q20a" class="solution">
+                            $$ v = \sqrt{2gh} = \sqrt{2(10)(20)} = 20 \text{ m/s} $$
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q20b:</strong> In Q20a, what is the cart's speed at point C (h=12m)?</p>
+                        <button onclick="toggleSolution('q20b')">Show Solution</button>
+                        <div id="q20b" class="solution">
+                            $$ v = \sqrt{2g(20-12)} = \sqrt{160} \approx 12.6 \text{ m/s} $$
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q20c:</strong> A \(1000 \text{ kg}\) car moving at \(20 \text{ m/s}\). What work
+                            is
+                            needed to
+                            stop it?</p>
+                        <button onclick="toggleSolution('q20c')">Show Solution</button>
+                        <div id="q20c" class="solution">
+                            $$ W = -\frac{1}{2}(1000)(400) = -200 \text{ kJ} $$
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q20d:</strong> What distance is needed to stop the car in Q20c if the braking
+                            force
+                            is
+                            \(F =
+                            8000 \text{ N}\)?</p>
+                        <button onclick="toggleSolution('q20d')">Show Solution</button>
+                        <div id="q20d" class="solution">
+                            $$ d = \frac{200000}{8000} = 25 \text{ m} $$
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q20e:</strong> A \(5 \text{ kg}\) object accelerates from rest to \(10 \text{
+                            m/s}\).
+                            What is
+                            \(\Delta K\)?</p>
+                        <button onclick="toggleSolution('q20e')">Show Solution</button>
+                        <div id="q20e" class="solution">
+                            $$ \Delta K = \frac{1}{2}(5)(100) = 250 \text{ J} $$
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q20f:</strong> Two objects have the same KE. If \(m_1=2\) kg and \(m_2=8\) kg,
+                            what
+                            is
+                            the
+                            ratio \(v_1/v_2\)?</p>
+                        <button onclick="toggleSolution('q20f')">Show Solution</button>
+                        <div id="q20f" class="solution">
+                            $$ \frac{v_1}{v_2} = \sqrt{4} = 2 $$
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q20g:</strong> A force doubles an object's speed. By what factor does its KE
+                            increase?
+                        </p>
+                        <button onclick="toggleSolution('q20g')">Show Solution</button>
+                        <div id="q20g" class="solution">
+                            <strong>Factor of 4.</strong>
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q20h:</strong> Two balls have equal mass. \(v_1=3\) m/s and \(v_2=4\) m/s. What
+                            is
+                            the
+                            ratio
+                            \(K_1/K_2\)?</p>
+                        <button onclick="toggleSolution('q20h')">Show Solution</button>
+                        <div id="q20h" class="solution">
+                            $$ \frac{K_1}{K_2} = \frac{9}{16} $$
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q20i:</strong> A truck and car have the same KE. The truck has \(4\times\) the
+                            car's
+                            mass.
+                            What is the ratio of their speeds?</p>
+                        <button onclick="toggleSolution('q20i')">Show Solution</button>
+                        <div id="q20i" class="solution">
+                            $$ v_{car} = 2 v_{truck} $$
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q20j:</strong> An airplane with mass \(50000 \text{ kg}\) flies at \(200 \text{
+                            m/s}\).
+                            What
+                            is its KE?</p>
+                        <button onclick="toggleSolution('q20j')">Show Solution</button>
+                        <div id="q20j" class="solution">
+                            $$ K = 1 \times 10^9 \text{ J} = 1 \text{ GJ} $$
+                        </div>
+                    </div>
 
-            scenarios.forEach(s => {
-                // Displacement arrow (horizontal)
-                ctx.strokeStyle = '#1e3c72';
-                ctx.lineWidth = 3;
-                ctx.beginPath();
-                ctx.moveTo(s.x - 40, 150);
-                ctx.lineTo(s.x + 40, 150);
-                ctx.stroke();
-                // Arrowhead
-                ctx.beginPath();
-                ctx.moveTo(s.x + 40, 150);
-                ctx.lineTo(s.x + 30, 145);
-                ctx.lineTo(s.x + 30, 155);
-                ctx.closePath();
-                ctx.fillStyle = '#1e3c72';
-                ctx.fill();
+                    <div class="subsection">
+                        <h3>🌍 Topic 5: Potential Energy & Conservation</h3>
+                        <div class="example">
+                            <p><strong>Q21:</strong> A \(1 \text{ kg}\) book is lifted \(1 \text{ m}\). What is the
+                                change in gravitational potential energy?</p>
+                            <button onclick="toggleSolution('q21')">Show Solution</button>
+                            <div id="q21" class="solution">
+                                \(\Delta U_g = mg\Delta y = (1)(9.8)(1) = 9.8 \text{ J}\).
+                            </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q22:</strong> A ball is dropped from height \(h\). Just before hitting the
+                                ground, where has the potential energy gone?</p>
+                            <button onclick="toggleSolution('q22')">Show Solution</button>
+                            <div id="q22" class="solution">
+                                It has converted entirely into <strong>Kinetic Energy</strong>.
+                            </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q23:</strong> Does the zero point of Potential Energy matter physically?</p>
+                            <button onclick="toggleSolution('q23')">Show Solution</button>
+                            <div id="q23" class="solution">
+                                <strong>No.</strong> Only the <em>difference</em> in potential energy between two
+                                points
+                                matters for physical calculations.
+                            </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q24:</strong> Friction is a nonconservative force. What happens to mechanical
+                                energy when friction acts?</p>
+                            <button onclick="toggleSolution('q24')">Show Solution</button>
+                            <div id="q24" class="solution">
+                                Mechanical energy is decreased and converted into <strong>Internal Energy</strong>
+                                (heat/thermal).
+                            </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q25:</strong> A pendulum swings back and forth. At the bottom of its swing,
+                                is
+                                Potential Energy max or min?</p>
+                            <button onclick="toggleSolution('q25')">Show Solution</button>
+                            <div id="q25" class="solution">
+                                <strong>Minimum.</strong> Height is lowest, so \(U_g\) is lowest. Kinetic Energy is
+                                maximum here.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- New Topic 5 Questions -->
+                    <div class="example">
+                        <p><strong>Q25a:</strong> The diagram shows a simple pendulum. If the pendulum length is \(L
+                            = 2
+                            \text{
+                            m}\) and the maximum angle is \(\theta = 30^\circ\), what is the maximum speed at the
+                            bottom?
+                        </p>
+                        <div class="diagram">
+                            <img src="pendulum_energy_1767723201871.png" alt="Pendulum Energy"
+                                style="max-width: 100%; border-radius: 10px;">
+                        </div>
+                        <button onclick="toggleSolution('q25a')">Show Solution</button>
+                        <div id="q25a" class="solution">
+                            Height: \(h = L(1 - \cos\theta) = 2(1 - 0.866) = 0.268 \text{ m}\)<br>
+                            $$ v = \sqrt{2gh} = \sqrt{2(10)(0.268)} = 2.3 \text{ m/s} $$
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q25b:</strong> A \(2 \text{ kg}\) ball falls from \(h = 45 \text{ m}\). What is
+                            its
+                            speed
+                            just before hitting the ground?</p>
+                        <button onclick="toggleSolution('q25b')">Show Solution</button>
+                        <div id="q25b" class="solution">
+                            $$ v = \sqrt{2gh} = \sqrt{900} = 30 \text{ m/s} $$
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q25c:</strong> A slide has height \(5 \text{ m}\). What is the child's speed at
+                            the
+                            bottom?
+                        </p>
+                        <button onclick="toggleSolution('q25c')">Show Solution</button>
+                        <div id="q25c" class="solution">
+                            $$ v = \sqrt{2(10)(5)} = 10 \text{ m/s} $$
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q25d:</strong> A ball is thrown upward at \(20 \text{ m/s}\). What is the maximum
+                            height?
+                        </p>
+                        <button onclick="toggleSolution('q25d')">Show Solution</button>
+                        <div id="q25d" class="solution">
+                            $$ h = \frac{v^2}{2g} = \frac{400}{20} = 20 \text{ m} $$
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q25e:</strong> A \(4 \text{ kg}\) object falls from \(10 \text{ m}\). What is its
+                            KE
+                            when
+                            it's \(5 \text{ m}\) above ground?</p>
+                        <button onclick="toggleSolution('q25e')">Show Solution</button>
+                        <div id="q25e" class="solution">
+                            After falling 5 m: $$ K = mgh = 4(10)(5) = 200 \text{ J} $$
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q25f:</strong> A spring with \(k=800\) N/m compressed \(0.1 \text{ m}\) launches
+                            a
+                            \(0.2
+                            \text{ kg}\) ball. What is its speed?</p>
+                        <button onclick="toggleSolution('q25f')">Show Solution</button>
+                        <div id="q25f" class="solution">
+                            $$ \frac{1}{2}kx^2 = \frac{1}{2}mv^2 $$
+                            $$ v = \sqrt{\frac{kx^2}{m}} = \sqrt{\frac{8}{0.2}} = \sqrt{40} = 6.3 \text{ m/s} $$
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q25g:</strong> An object slides down a frictionless incline. Does it reach the
+                            same
+                            height on
+                            the other side?</p>
+                        <button onclick="toggleSolution('q25g')">Show Solution</button>
+                        <div id="q25g" class="solution">
+                            <strong>Yes.</strong> Conservation of mechanical energy ensures it returns to the same
+                            height.
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q25h:</strong> In Q25g, if there's friction, what happens?</p>
+                        <button onclick="toggleSolution('q25h')">Show Solution</button>
+                        <div id="q25h" class="solution">
+                            <strong>It doesn't reach the same height.</strong> Some energy is converted to heat.
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q25i:</strong> An elevator falls from \(25 \text{ m}\). What is its speed before
+                            impact?
+                        </p>
+                        <button onclick="toggleSolution('q25i')">Show Solution</button>
+                        <div id="q25i" class="solution">
+                            $$ v = \sqrt{2(10)(25)} = \sqrt{500} \approx 22.4 \text{ m/s} $$
+                        </div>
+                    </div>
+                    <div class="example">
+                        <p><strong>Q25j:</strong> An arrow is shot from a bow at \(50 \text{ m/s}\). What is the
+                            maximum
+                            height
+                            if shot vertically?</p>
+                        <button onclick="toggleSolution('q25j')">Show Solution</button>
+                        <div id="q25j" class="solution">
+                            $$ h = \frac{v^2}{2g} = \frac{2500}{20} = 125 \text{ m} $$
+                        </div>
+                    </div>
 
-                // Force arrow (at angle)
-                const fx = Math.cos(s.angle) * 60;
-                const fy = -Math.sin(s.angle) * 60;
-                ctx.strokeStyle = '#ff6b6b';
-                ctx.lineWidth = 3;
-                ctx.beginPath();
-                ctx.moveTo(s.x, 150);
-                ctx.lineTo(s.x + fx, 150 + fy);
-                ctx.stroke();
-                // Arrowhead
-                const angle = Math.atan2(fy, fx);
-                ctx.save();
-                ctx.translate(s.x + fx, 150 + fy);
-                ctx.rotate(angle);
-                ctx.beginPath();
-                ctx.moveTo(0, 0);
-                ctx.lineTo(-10, -5);
-                ctx.lineTo(-10, 5);
-                ctx.closePath();
-                ctx.fillStyle = '#ff6b6b';
-                ctx.fill();
-                ctx.restore();
+                    <div class="subsection">
+                        <h3>🛡️ Topic 6: Conservative Forces & Equilibrium</h3>
+                        <div class="example">
+                            <p><strong>Q26:</strong> If the work done by a force depends on the path taken, is the
+                                force
+                                conservative?</p>
+                            <button onclick="toggleSolution('q26')">Show Solution</button>
+                            <div id="q26" class="solution">
+                                <strong>No.</strong> This is the definition of a <strong>Nonconservative</strong>
+                                force.
+                            </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q27:</strong> Given \(U(x)\), how do you find the force \(F(x)\)?</p>
+                            <button onclick="toggleSolution('q27')">Show Solution</button>
+                            <div id="q27" class="solution">
+                                Take the negative derivative: \(F(x) = - \frac{dU}{dx}\).
+                            </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q28:</strong> At a point of stable equilibrium, is potential energy at a
+                                minimum
+                                or maximum?</p>
+                            <button onclick="toggleSolution('q28')">Show Solution</button>
+                            <div id="q28" class="solution">
+                                <strong>Minimum.</strong> Like a ball at the bottom of a valley.
+                            </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q29:</strong> If a particle is at equilibrium, what is the net force on it?
+                            </p>
+                            <button onclick="toggleSolution('q29')">Show Solution</button>
+                            <div id="q29" class="solution">
+                                <strong>Zero.</strong> Equilibrium implies \(F = 0\) (or slope of \(U\) is zero).
+                            </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q30:</strong> A force does zero work on a round trip. What kind of force is
+                                it?
+                            </p>
+                            <button onclick="toggleSolution('q30')">Show Solution</button>
+                            <div id="q30" class="solution">
+                                <strong>Conservative Force.</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- New Topic 6 Questions -->
+                    <div class="example">
+                        <p><strong>Q30a:</strong> The diagram shows a \(U(x)\) curve. Identify the stable and
+                            unstable
+                            equilibrium points.</p>
+                        <div class="diagram">
+                            <img src="potential_energy_curve_1767723273886.png" alt="Potential Energy Curve"
+                                style="max-width: 100%; border-radius: 10px;">
+                        </div>
+                        <button onclick="toggleSolution('q30a')">Show Solution</button>
+                        <div id="q30a" class="solution">
+                            <strong>Stable:</strong> Valleys (minima) - where \(dU/dx = 0\) and \(d^2U/dx^2 >
+                            0\)<br>
+                            <strong>Unstable:</strong> Peaks (maxima) - where \(dU/dx = 0\) and \(d^2U/dx^2 < 0\) </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q30b:</strong> If \(U(x) = 4x^2 - 2x^4\), find the force \(F(x)\).</p>
+                            <button onclick="toggleSolution('q30b')">Show Solution</button>
+                            <div id="q30b" class="solution">
+                                $$ F(x) = -\frac{dU}{dx} = -(8x - 8x^3) = 8x^3 - 8x $$
+                            </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q30c:</strong> An object moves between two points via two different paths. Is
+                                the
+                                work
+                                done by gravity (A) the same or (B) different?</p>
+                            <button onclick="toggleSolution('q30c')">Show Solution</button>
+                            <div id="q30c" class="solution">
+                                <strong>(A) The same.</strong> Gravity is a conservative force; its work depends
+                                only on
+                                the
+                                endpoints.
+                            </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q30d:</strong> What is the condition for equilibrium in terms of \(U(x)\)?
+                            </p>
+                            <button onclick="toggleSolution('q30d')">Show Solution</button>
+                            <div id="q30d" class="solution">
+                                $$ \frac{dU}{dx} = 0 $$
+                            </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q30e:</strong> If \(U = 5x^2\), what type of equilibrium exists at \(x = 0\)?
+                            </p>
+                            <button onclick="toggleSolution('q30e')">Show Solution</button>
+                            <div id="q30e" class="solution">
+                                <strong>Stable.</strong> Since \(d^2U/dx^2 = 10 > 0\) (minimum).
+                            </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q30f:</strong> Is friction a conservative force? Why?</p>
+                            <button onclick="toggleSolution('q30f')">Show Solution</button>
+                            <div id="q30f" class="solution">
+                                <strong>No.</strong> Friction's work depends on the path and converts energy to
+                                heat.
+                            </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q30g:</strong> An object slides from A to B and back. If it loses 20% of its
+                                energy
+                                to
+                                friction, what is its final height if it started from \(h\)?</p>
+                            <button onclick="toggleSolution('q30g')">Show Solution</button>
+                            <div id="q30g" class="solution">
+                                $$ h_{final} = 0.8h $$
+                            </div>
+                        </div>
 
-                // Labels
-                ctx.fillStyle = '#333';
-                ctx.font = '14px Arial';
-                ctx.textAlign = 'center';
-                ctx.fillText('d', s.x, 170);
-                ctx.fillText('F', s.x + fx / 2 - 10, 150 + fy / 2);
-                ctx.fillText(s.label, s.x, 200);
-                ctx.fillText('W: ' + s.work, s.x, 220);
-            });
+                        <div class="subsection">
+                            <h3>📊 Topic 7: Graph-Based Problems</h3>
+                            <div class="example">
+                                <p><strong>Q31:</strong> An object moving along the x-axis is acted upon by a force
+                                    \(F_x\)
+                                    that
+                                    varies with position as shown. How much work is done by this force as the object
+                                    moves
+                                    from
+                                    \(x = 2 \text{ m}\) to \(x = 8 \text{ m}\)?</p>
+                                <div class="diagram">
+                                    <img src="fx_graph_q31.png" alt="Force vs Position Graph"
+                                        style="max-width: 100%; border-radius: 10px;">
+                                </div>
+                                <p><strong>Options:</strong></p>
+                                <ul>
+                                    <li>A. +50 J</li>
+                                    <li>B. Zero</li>
+                                    <li>C. -30 J</li>
+                                    <li>D. +30 J</li>
+                                    <li>E. +40 J</li>
+                                </ul>
+                                <button onclick="toggleSolution('q31')">Show Solution</button>
+                                <div id="q31" class="solution">
+                                    <div class="step">
+                                        <strong>Concept:</strong> Work = Area under the \(F_x\) vs \(x\) curve.
+                                        Areas
+                                        above
+                                        the
+                                        axis are positive, areas below are negative.
+                                    </div>
+                                    <div class="step">
+                                        <strong>Method 1: Calculate Areas</strong><br>
+                                        • <strong>Region 1</strong> (from \(x=2\) to \(x=6\)): Triangle above the
+                                        axis<br>
+                                        $$ W_1 = \frac{1}{2} \times \text{base} \times \text{height} =
+                                        \frac{1}{2}(4)(20) =
+                                        +40
+                                        \text{ J} $$
+                                        • <strong>Region 2</strong> (from \(x=6\) to \(x=8\)): Triangle below the
+                                        axis<br>
+                                        $$ W_2 = \frac{1}{2}(2)(10) = -10 \text{ J} $$
+                                    </div>
+                                    <div class="step">
+                                        <strong>Method 2: Trapezoid</strong><br>
+                                        Calculate total area as a trapezoid from x=2 to x=8:<br>
+                                        Positive area (from x=2 to x=6) = 40 J<br>
+                                        Negative area (from x=6 to x=8) = -10 J
+                                    </div>
+                                    <div class="step">
+                                        <strong>Total Work:</strong><br>
+                                        $$ W_{\text{total}} = W_1 + W_2 = 40 + (-10) = +30 \text{ J} $$
+                                    </div>
+                                    <div class="important">
+                                        <strong>Answer: D. +30 J ✓</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- New Topic 7 Questions -->
+                        <div class="example">
+                            <p><strong>Q31a:</strong> From the triangular F-x graph, calculate the work from \(x=0\)
+                                to
+                                \(x=8\).
+                            </p>
+                            <div class="diagram">
+                                <img src="fx_graph_triangle_1767723251135.png" alt="Triangle F-x Graph"
+                                    style="max-width: 100%; border-radius: 10px;">
+                            </div>
+                            <button onclick="toggleSolution('q31a')">Show Solution</button>
+                            <div id="q31a" class="solution">
+                                Area = Triangle: $$ W = \frac{1}{2} \times 8 \times 30 = 120 \text{ J} $$
+                            </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q31b:</strong> A constant force \(F = 10 \text{ N}\) acts from \(x=0\) to
+                                \(x=5\).
+                                What
+                                is the work?</p>
+                            <button onclick="toggleSolution('q31b')">Show Solution</button>
+                            <div id="q31b" class="solution">
+                                $$ W = F \cdot d = 10 \times 5 = 50 \text{ J} $$
+                            </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q31c:</strong> Rectangular F-x curve: \(F=20\) N from \(x=2\) to \(x=7\).
+                                What is
+                                the
+                                work?</p>
+                            <button onclick="toggleSolution('q31c')">Show Solution</button>
+                            <div id="q31c" class="solution">
+                                $$ W = 20 \times 5 = 100 \text{ J} $$
+                            </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q31d:</strong> A U-x graph shows a minimum at \(x=3\). What is the direction
+                                of
+                                the
+                                force
+                                at \(x=2\)?</p>
+                            <button onclick="toggleSolution('q31d')">Show Solution</button>
+                            <div id="q31d" class="solution">
+                                <strong>Forward (+x).</strong> The slope is negative, so \(F = -dU/dx > 0\)
+                            </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q31e:</strong> A U-x graph: \(U\) decreases from \(x=0\) to \(x=5\). What is
+                                the
+                                force
+                                direction?</p>
+                            <button onclick="toggleSolution('q31e')">Show Solution</button>
+                            <div id="q31e" class="solution">
+                                <strong>Positive (+x).</strong> Because the slope is negative.
+                            </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q31f:</strong> Trapezoid: \(F=0\) at \(x=0\), \(F=20\) at \(x=4\), \(F=20\)
+                                at
+                                \(x=8\),
+                                \(F=0\) at \(x=12\). What is the total work?</p>
+                            <button onclick="toggleSolution('q31f')">Show Solution</button>
+                            <div id="q31f" class="solution">
+                                $$ W = \frac{1}{2}(4)(20) + (4)(20) + \frac{1}{2}(4)(20) = 40 + 80 + 40 = 160 \text{
+                                J}
+                                $$
+                            </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q31g:</strong> A spring is compressed gradually. If \(F = kx\) and \(k=100\)
+                                N/m,
+                                what is
+                                the work to compress it by \(0.5 \text{ m}\)?</p>
+                            <button onclick="toggleSolution('q31g')">Show Solution</button>
+                            <div id="q31g" class="solution">
+                                Area under straight line: $$ W = \frac{1}{2}(0.5)(50) = 12.5 \text{ J} $$
+                            </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q31h:</strong> Negative F-x curve (below axis): \(F=-15\) N from \(x=3\) to
+                                \(x=6\).
+                                What
+                                is the work?</p>
+                            <button onclick="toggleSolution('q31h')">Show Solution</button>
+                            <div id="q31h" class="solution">
+                                $$ W = -15 \times 3 = -45 \text{ J} $$
+                            </div>
+                        </div>
+                        <div class="example">
+                            <p><strong>Q31i:</strong> A K-x graph shows KE is constant. What is the total work on
+                                the
+                                object?
+                            </p>
+                            <button onclick="toggleSolution('q31i')">Show Solution</button>
+                            <div id="q31i" class="solution">
+                                <strong>Zero.</strong> \(W_{net} = \Delta K = 0\)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            // Legend
-            ctx.fillStyle = '#1e3c72';
-            ctx.fillRect(50, 250, 30, 10);
-            ctx.fillStyle = '#333';
-            ctx.fillText('= Displacement', 130, 260);
+            <script>
+                // Navigation
+                function showSection(index) {
+                    const sections = document.querySelectorAll('.section');
+                    const buttons = document.querySelectorAll('.nav-btn');
 
-            ctx.fillStyle = '#ff6b6b';
-            ctx.fillRect(300, 250, 30, 10);
-            ctx.fillText('= Force', 380, 260);
-        }
+                    sections.forEach(s => s.classList.remove('active'));
+                    buttons.forEach(b => b.classList.remove('active'));
 
-        // Spring Simulator (Section 7.4)
-        const springCanvas = document.getElementById('springCanvas');
-        if (springCanvas) {
-            const ctx = springCanvas.getContext('2d');
-            let k = 100;
-            let x = 0;
+                    sections[index].classList.add('active');
+                    buttons[index].classList.add('active');
 
-            function drawSpring() {
-                ctx.clearRect(0, 0, springCanvas.width, springCanvas.height);
-
-                // Wall
-                ctx.fillStyle = '#666';
-                ctx.fillRect(50, 100, 20, 100);
-
-                // Spring
-                const equilibrium = 250;
-                const displacement = x * 2; // Scale for visibility
-                const springEnd = equilibrium + displacement;
-
-                ctx.strokeStyle = '#4caf50';
-                ctx.lineWidth = 3;
-                ctx.beginPath();
-                ctx.moveTo(70, 150);
-
-                const coils = 10;
-                const coilWidth = (springEnd - 70) / coils;
-                for (let i = 0; i < coils; i++) {
-                    const xPos = 70 + i * coilWidth;
-                    ctx.lineTo(xPos + coilWidth / 2, i % 2 === 0 ? 130 : 170);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                 }
-                ctx.lineTo(springEnd, 150);
-                ctx.stroke();
 
-                // Block
-                ctx.fillStyle = '#ff6b6b';
-                ctx.fillRect(springEnd - 10, 125, 50, 50);
-                ctx.fillStyle = 'white';
-                ctx.font = 'bold 16px Arial';
-                ctx.textAlign = 'center';
-                ctx.fillText('m', springEnd + 15, 155);
-
-                // Equilibrium line
-                ctx.strokeStyle = '#999';
-                ctx.setLineDash([5, 5]);
-                ctx.beginPath();
-                ctx.moveTo(equilibrium, 100);
-                ctx.lineTo(equilibrium, 200);
-                ctx.stroke();
-                ctx.setLineDash([]);
-
-                // Force arrow
-                const force = -k * x / 100;
-                if (Math.abs(force) > 0.5) {
-                    const arrowStart = springEnd + 25;
-                    const arrowLength = force * 20;
-                    ctx.strokeStyle = '#2196F3';
-                    ctx.lineWidth = 2;
-                    ctx.beginPath();
-                    ctx.moveTo(arrowStart, 150);
-                    ctx.lineTo(arrowStart + arrowLength, 150);
-                    ctx.stroke();
-
-                    // Arrowhead
-                    ctx.beginPath();
-                    const dir = arrowLength > 0 ? 1 : -1;
-                    ctx.moveTo(arrowStart + arrowLength, 150);
-                    ctx.lineTo(arrowStart + arrowLength - dir * 10, 145);
-                    ctx.lineTo(arrowStart + arrowLength - dir * 10, 155);
-                    ctx.closePath();
-                    ctx.fillStyle = '#2196F3';
-                    ctx.fill();
-
-                    ctx.fillStyle = '#2196F3';
-                    ctx.font = '14px Arial';
-                    ctx.fillText('F', arrowStart + arrowLength / 2, 140);
+                // Toggle Solutions
+                function toggleSolution(id) {
+                    const solution = document.getElementById(id);
+                    solution.classList.toggle('show');
                 }
 
-                // Labels
-                ctx.fillStyle = '#333';
-                ctx.font = '14px Arial';
-                ctx.fillText('Equilibrium', equilibrium, 220);
-                ctx.fillText('x = ' + x + ' cm', equilibrium, 90);
-            }
+                // Draw Work Diagram (Section 7.2)
+                const workCanvas = document.getElementById('workCanvas');
+                if (workCanvas) {
+                    const ctx = workCanvas.getContext('2d');
 
-            document.getElementById('springK').addEventListener('input', (e) => {
-                k = e.target.value;
-                document.getElementById('kValue').textContent = k;
-                updateSpringValues();
-                drawSpring();
-            });
+                    // Draw three scenarios
+                    const scenarios = [
+                        { x: 100, angle: 0, label: 'θ = 0°', work: 'Max +' },
+                        { x: 300, angle: Math.PI / 4, label: 'θ = 45°', work: 'Partial +' },
+                        { x: 500, angle: Math.PI / 2, label: 'θ = 90°', work: 'Zero' }
+                    ];
 
-            document.getElementById('springX').addEventListener('input', (e) => {
-                x = e.target.value;
-                document.getElementById('xValue').textContent = x;
-                updateSpringValues();
-                drawSpring();
-            });
+                    scenarios.forEach(s => {
+                        // Displacement arrow (horizontal)
+                        ctx.strokeStyle = '#1e3c72';
+                        ctx.lineWidth = 3;
+                        ctx.beginPath();
+                        ctx.moveTo(s.x - 40, 150);
+                        ctx.lineTo(s.x + 40, 150);
+                        ctx.stroke();
+                        // Arrowhead
+                        ctx.beginPath();
+                        ctx.moveTo(s.x + 40, 150);
+                        ctx.lineTo(s.x + 30, 145);
+                        ctx.lineTo(s.x + 30, 155);
+                        ctx.closePath();
+                        ctx.fillStyle = '#1e3c72';
+                        ctx.fill();
 
-            function updateSpringValues() {
-                const force = -k * x / 100;
-                const work = 0.5 * k * (x / 100) * (x / 100);
-                document.getElementById('forceValue').textContent = force.toFixed(2);
-                document.getElementById('workValue').textContent = work.toFixed(3);
-            }
+                        // Force arrow (at angle)
+                        const fx = Math.cos(s.angle) * 60;
+                        const fy = -Math.sin(s.angle) * 60;
+                        ctx.strokeStyle = '#ff6b6b';
+                        ctx.lineWidth = 3;
+                        ctx.beginPath();
+                        ctx.moveTo(s.x, 150);
+                        ctx.lineTo(s.x + fx, 150 + fy);
+                        ctx.stroke();
+                        // Arrowhead
+                        const angle = Math.atan2(fy, fx);
+                        ctx.save();
+                        ctx.translate(s.x + fx, 150 + fy);
+                        ctx.rotate(angle);
+                        ctx.beginPath();
+                        ctx.moveTo(0, 0);
+                        ctx.lineTo(-10, -5);
+                        ctx.lineTo(-10, 5);
+                        ctx.closePath();
+                        ctx.fillStyle = '#ff6b6b';
+                        ctx.fill();
+                        ctx.restore();
 
-            drawSpring();
-        }
+                        // Labels
+                        ctx.fillStyle = '#333';
+                        ctx.font = '14px Arial';
+                        ctx.textAlign = 'center';
+                        ctx.fillText('d', s.x, 170);
+                        ctx.fillText('F', s.x + fx / 2 - 10, 150 + fy / 2);
+                        ctx.fillText(s.label, s.x, 200);
+                        ctx.fillText('W: ' + s.work, s.x, 220);
+                    });
 
-        // Path Comparison Canvas (Section 7.7)
-        const pathCanvas = document.getElementById('pathCanvas');
-        if (pathCanvas) {
-            const ctx = pathCanvas.getContext('2d');
+                    // Legend
+                    ctx.fillStyle = '#1e3c72';
+                    ctx.fillRect(50, 250, 30, 10);
+                    ctx.fillStyle = '#333';
+                    ctx.fillText('= Displacement', 130, 260);
 
-            // Starting and ending points
-            const start = { x: 100, y: 300 };
-            const end = { x: 600, y: 100 };
-
-            // Draw paths
-            // Path A - straight
-            ctx.strokeStyle = '#4caf50';
-            ctx.lineWidth = 3;
-            ctx.setLineDash([]);
-            ctx.beginPath();
-            ctx.moveTo(start.x, start.y);
-            ctx.lineTo(end.x, end.y);
-            ctx.stroke();
-            ctx.fillStyle = '#4caf50';
-            ctx.font = 'bold 16px Arial';
-            ctx.fillText('A', 350, 180);
-
-            // Path B - curved
-            ctx.strokeStyle = '#ff9800';
-            ctx.beginPath();
-            ctx.moveTo(start.x, start.y);
-            ctx.quadraticCurveTo(200, 100, end.x, end.y);
-            ctx.stroke();
-            ctx.fillStyle = '#ff9800';
-            ctx.fillText('B', 250, 120);
-
-            // Path C - stepped
-            ctx.strokeStyle = '#9c27b0';
-            ctx.beginPath();
-            ctx.moveTo(start.x, start.y);
-            ctx.lineTo(400, start.y);
-            ctx.lineTo(400, end.y);
-            ctx.lineTo(end.x, end.y);
-            ctx.stroke();
-            ctx.fillStyle = '#9c27b0';
-            ctx.fillText('C', 450, 250);
-
-            // Points
-            ctx.fillStyle = '#1e3c72';
-            ctx.beginPath();
-            ctx.arc(start.x, start.y, 8, 0, Math.PI * 2);
-            ctx.fill();
-            ctx.beginPath();
-            ctx.arc(end.x, end.y, 8, 0, Math.PI * 2);
-            ctx.fill();
-
-            // Labels
-            ctx.fillStyle = '#333';
-            ctx.font = '16px Arial';
-            ctx.fillText('Start', start.x - 30, start.y + 25);
-            ctx.fillText('End', end.x - 20, end.y - 15);
-
-            // Info text replaced by HTML below canvas for MathJax support
-        }
-
-        // PE Graph Interactive (Section 7.8)
-        const peCanvas = document.getElementById('peCanvas');
-        if (peCanvas) {
-            const ctx = peCanvas.getContext('2d');
-            let currentSystem = 'spring';
-
-            function drawPEGraph() {
-                ctx.clearRect(0, 0, peCanvas.width, peCanvas.height);
-
-                // Axes
-                ctx.strokeStyle = '#333';
-                ctx.lineWidth = 2;
-                ctx.beginPath();
-                ctx.moveTo(50, 350);
-                ctx.lineTo(650, 350); // x-axis
-                ctx.moveTo(50, 350);
-                ctx.lineTo(50, 50); // y-axis
-                ctx.stroke();
-
-                // Labels
-                ctx.fillStyle = '#333';
-                ctx.font = '16px Arial';
-                ctx.fillText('Position (x)', 600, 370);
-                ctx.save();
-                ctx.translate(20, 200);
-                ctx.rotate(-Math.PI / 2);
-                ctx.fillText('Potential Energy (U)', 0, 0);
-                ctx.restore();
-
-                // Grid
-                ctx.strokeStyle = '#e0e0e0';
-                ctx.lineWidth = 1;
-                for (let i = 1; i < 6; i++) {
-                    ctx.beginPath();
-                    ctx.moveTo(50 + i * 100, 350);
-                    ctx.lineTo(50 + i * 100, 50);
-                    ctx.stroke();
-                    ctx.beginPath();
-                    ctx.moveTo(50, 50 + i * 60);
-                    ctx.lineTo(650, 50 + i * 60);
-                    ctx.stroke();
+                    ctx.fillStyle = '#ff6b6b';
+                    ctx.fillRect(300, 250, 30, 10);
+                    ctx.fillText('= Force', 380, 260);
                 }
 
-                // Draw PE curve based on system
-                ctx.strokeStyle = '#667eea';
-                ctx.lineWidth = 3;
-                ctx.beginPath();
+                // Spring Simulator (Section 7.4)
+                const springCanvas = document.getElementById('springCanvas');
+                if (springCanvas) {
+                    const ctx = springCanvas.getContext('2d');
+                    let k = 100;
+                    let x = 0;
 
-                for (let px = 50; px <= 650; px++) {
-                    const x = (px - 350) / 50; // Scale
-                    let u;
+                    function drawSpring() {
+                        ctx.clearRect(0, 0, springCanvas.width, springCanvas.height);
 
-                    if (currentSystem === 'spring') {
-                        u = 0.5 * x * x; // Parabola
-                    } else if (currentSystem === 'gravity') {
-                        u = x; // Linear
-                    } else if (currentSystem === 'well') {
-                        u = Math.pow(x, 4) - 2 * Math.pow(x, 2); // Well shape
+                        // Wall
+                        ctx.fillStyle = '#666';
+                        ctx.fillRect(50, 100, 20, 100);
+
+                        // Spring
+                        const equilibrium = 250;
+                        const displacement = x * 2; // Scale for visibility
+                        const springEnd = equilibrium + displacement;
+
+                        ctx.strokeStyle = '#4caf50';
+                        ctx.lineWidth = 3;
+                        ctx.beginPath();
+                        ctx.moveTo(70, 150);
+
+                        const coils = 10;
+                        const coilWidth = (springEnd - 70) / coils;
+                        for (let i = 0; i < coils; i++) {
+                            const xPos = 70 + i * coilWidth;
+                            ctx.lineTo(xPos + coilWidth / 2, i % 2 === 0 ? 130 : 170);
+                        }
+                        ctx.lineTo(springEnd, 150);
+                        ctx.stroke();
+
+                        // Block
+                        ctx.fillStyle = '#ff6b6b';
+                        ctx.fillRect(springEnd - 10, 125, 50, 50);
+                        ctx.fillStyle = 'white';
+                        ctx.font = 'bold 16px Arial';
+                        ctx.textAlign = 'center';
+                        ctx.fillText('m', springEnd + 15, 155);
+
+                        // Equilibrium line
+                        ctx.strokeStyle = '#999';
+                        ctx.setLineDash([5, 5]);
+                        ctx.beginPath();
+                        ctx.moveTo(equilibrium, 100);
+                        ctx.lineTo(equilibrium, 200);
+                        ctx.stroke();
+                        ctx.setLineDash([]);
+
+                        // Force arrow
+                        const force = -k * x / 100;
+                        if (Math.abs(force) > 0.5) {
+                            const arrowStart = springEnd + 25;
+                            const arrowLength = force * 20;
+                            ctx.strokeStyle = '#2196F3';
+                            ctx.lineWidth = 2;
+                            ctx.beginPath();
+                            ctx.moveTo(arrowStart, 150);
+                            ctx.lineTo(arrowStart + arrowLength, 150);
+                            ctx.stroke();
+
+                            // Arrowhead
+                            ctx.beginPath();
+                            const dir = arrowLength > 0 ? 1 : -1;
+                            ctx.moveTo(arrowStart + arrowLength, 150);
+                            ctx.lineTo(arrowStart + arrowLength - dir * 10, 145);
+                            ctx.lineTo(arrowStart + arrowLength - dir * 10, 155);
+                            ctx.closePath();
+                            ctx.fillStyle = '#2196F3';
+                            ctx.fill();
+
+                            ctx.fillStyle = '#2196F3';
+                            ctx.font = '14px Arial';
+                            ctx.fillText('F', arrowStart + arrowLength / 2, 140);
+                        }
+
+                        // Labels
+                        ctx.fillStyle = '#333';
+                        ctx.font = '14px Arial';
+                        ctx.fillText('Equilibrium', equilibrium, 220);
+                        ctx.fillText('x = ' + x + ' cm', equilibrium, 90);
                     }
 
-                    const py = 350 - u * 30;
+                    document.getElementById('springK').addEventListener('input', (e) => {
+                        k = e.target.value;
+                        document.getElementById('kValue').textContent = k;
+                        updateSpringValues();
+                        drawSpring();
+                    });
 
-                    if (px === 50) ctx.moveTo(px, py);
-                    else ctx.lineTo(px, py);
+                    document.getElementById('springX').addEventListener('input', (e) => {
+                        x = e.target.value;
+                        document.getElementById('xValue').textContent = x;
+                        updateSpringValues();
+                        drawSpring();
+                    });
+
+                    function updateSpringValues() {
+                        const force = -k * x / 100;
+                        const work = 0.5 * k * (x / 100) * (x / 100);
+                        document.getElementById('forceValue').textContent = force.toFixed(2);
+                        document.getElementById('workValue').textContent = work.toFixed(3);
+                    }
+
+                    drawSpring();
                 }
-                ctx.stroke();
 
-                // Draw equilibrium points
-                if (currentSystem === 'spring' || currentSystem === 'gravity') {
+                // Path Comparison Canvas (Section 7.7)
+                const pathCanvas = document.getElementById('pathCanvas');
+                if (pathCanvas) {
+                    const ctx = pathCanvas.getContext('2d');
+
+                    // Starting and ending points
+                    const start = { x: 100, y: 300 };
+                    const end = { x: 600, y: 100 };
+
+                    // Draw paths
+                    // Path A - straight
+                    ctx.strokeStyle = '#4caf50';
+                    ctx.lineWidth = 3;
+                    ctx.setLineDash([]);
+                    ctx.beginPath();
+                    ctx.moveTo(start.x, start.y);
+                    ctx.lineTo(end.x, end.y);
+                    ctx.stroke();
                     ctx.fillStyle = '#4caf50';
+                    ctx.font = 'bold 16px Arial';
+                    ctx.fillText('A', 350, 180);
+
+                    // Path B - curved
+                    ctx.strokeStyle = '#ff9800';
                     ctx.beginPath();
-                    ctx.arc(350, 350, 6, 0, Math.PI * 2);
-                    ctx.fill();
-                    ctx.fillText('Equilibrium', 360, 345);
-                } else if (currentSystem === 'well') {
-                    // Two equilibria for potential well
-                    ctx.fillStyle = '#4caf50';
+                    ctx.moveTo(start.x, start.y);
+                    ctx.quadraticCurveTo(200, 100, end.x, end.y);
+                    ctx.stroke();
+                    ctx.fillStyle = '#ff9800';
+                    ctx.fillText('B', 250, 120);
+
+                    // Path C - stepped
+                    ctx.strokeStyle = '#9c27b0';
                     ctx.beginPath();
-                    ctx.arc(350 - 50, 350 - 30, 6, 0, Math.PI * 2);
+                    ctx.moveTo(start.x, start.y);
+                    ctx.lineTo(400, start.y);
+                    ctx.lineTo(400, end.y);
+                    ctx.lineTo(end.x, end.y);
+                    ctx.stroke();
+                    ctx.fillStyle = '#9c27b0';
+                    ctx.fillText('C', 450, 250);
+
+                    // Points
+                    ctx.fillStyle = '#1e3c72';
+                    ctx.beginPath();
+                    ctx.arc(start.x, start.y, 8, 0, Math.PI * 2);
                     ctx.fill();
                     ctx.beginPath();
-                    ctx.arc(350 + 50, 350 - 30, 6, 0, Math.PI * 2);
+                    ctx.arc(end.x, end.y, 8, 0, Math.PI * 2);
                     ctx.fill();
-                    ctx.fillText('Stable', 320, 310);
-                    ctx.fillText('Stable', 420, 310);
 
-                    // Unstable equilibrium
-                    ctx.fillStyle = '#ff6b6b';
-                    ctx.beginPath();
-                    ctx.arc(350, 350, 6, 0, Math.PI * 2);
-                    ctx.fill();
-                    ctx.fillText('Unstable', 360, 345);
-                }
-            }
+                    // Labels
+                    ctx.fillStyle = '#333';
+                    ctx.font = '16px Arial';
+                    ctx.fillText('Start', start.x - 30, start.y + 25);
+                    ctx.fillText('End', end.x - 20, end.y - 15);
 
-            window.updatePEGraph = function () {
-                currentSystem = document.getElementById('peSystem').value;
-                drawPEGraph();
-
-                const info = document.getElementById('peInfo');
-                if (currentSystem === 'spring') {
-                    info.innerHTML = '<strong>Spring System:</strong> $$ U = \\frac{1}{2}kx^2 $$<br>• Parabolic curve<br>• Single stable equilibrium at \\(x = 0\\)<br>• Force: \\(F = -kx\\) (proportional to displacement)';
-                } else if (currentSystem === 'gravity') {
-                    info.innerHTML = '<strong>Gravitational System:</strong> $$ U = mgy $$<br>• Linear relationship<br>• Force: \\(F = -mg\\) (constant)<br>• No equilibrium (always pulls down)';
-                } else {
-                    info.innerHTML = '<strong>Potential Well:</strong> $$ U = x^4 - 2x^2 $$<br>• Two stable equilibria (valleys)<br>• One unstable equilibrium (peak)<br>• System prefers the valleys';
-                }
-                if (window.MathJax) {
-                    MathJax.typesetPromise([info]);
-                }
-            };
-
-            peCanvas.addEventListener('click', (e) => {
-                const rect = peCanvas.getBoundingClientRect();
-                const x = e.clientX - rect.left;
-                const px = (x - 350) / 50;
-
-                let u, f;
-                if (currentSystem === 'spring') {
-                    u = 0.5 * px * px;
-                    f = -px;
-                } else if (currentSystem === 'gravity') {
-                    u = px;
-                    f = -1;
-                } else {
-                    u = Math.pow(px, 4) - 2 * Math.pow(px, 2);
-                    f = -(4 * Math.pow(px, 3) - 4 * px);
+                    // Info text replaced by HTML below canvas for MathJax support
                 }
 
-                const info = document.getElementById('peInfo');
-                info.innerHTML = `<strong>At position \\(x = ${px.toFixed(2)}\\):</strong><br>
+                // PE Graph Interactive (Section 7.8)
+                const peCanvas = document.getElementById('peCanvas');
+                if (peCanvas) {
+                    const ctx = peCanvas.getContext('2d');
+                    let currentSystem = 'spring';
+
+                    function drawPEGraph() {
+                        ctx.clearRect(0, 0, peCanvas.width, peCanvas.height);
+
+                        // Axes
+                        ctx.strokeStyle = '#333';
+                        ctx.lineWidth = 2;
+                        ctx.beginPath();
+                        ctx.moveTo(50, 350);
+                        ctx.lineTo(650, 350); // x-axis
+                        ctx.moveTo(50, 350);
+                        ctx.lineTo(50, 50); // y-axis
+                        ctx.stroke();
+
+                        // Labels
+                        ctx.fillStyle = '#333';
+                        ctx.font = '16px Arial';
+                        ctx.fillText('Position (x)', 600, 370);
+                        ctx.save();
+                        ctx.translate(20, 200);
+                        ctx.rotate(-Math.PI / 2);
+                        ctx.fillText('Potential Energy (U)', 0, 0);
+                        ctx.restore();
+
+                        // Grid
+                        ctx.strokeStyle = '#e0e0e0';
+                        ctx.lineWidth = 1;
+                        for (let i = 1; i < 6; i++) {
+                            ctx.beginPath();
+                            ctx.moveTo(50 + i * 100, 350);
+                            ctx.lineTo(50 + i * 100, 50);
+                            ctx.stroke();
+                            ctx.beginPath();
+                            ctx.moveTo(50, 50 + i * 60);
+                            ctx.lineTo(650, 50 + i * 60);
+                            ctx.stroke();
+                        }
+
+                        // Draw PE curve based on system
+                        ctx.strokeStyle = '#667eea';
+                        ctx.lineWidth = 3;
+                        ctx.beginPath();
+
+                        for (let px = 50; px <= 650; px++) {
+                            const x = (px - 350) / 50; // Scale
+                            let u;
+
+                            if (currentSystem === 'spring') {
+                                u = 0.5 * x * x; // Parabola
+                            } else if (currentSystem === 'gravity') {
+                                u = x; // Linear
+                            } else if (currentSystem === 'well') {
+                                u = Math.pow(x, 4) - 2 * Math.pow(x, 2); // Well shape
+                            }
+
+                            const py = 350 - u * 30;
+
+                            if (px === 50) ctx.moveTo(px, py);
+                            else ctx.lineTo(px, py);
+                        }
+                        ctx.stroke();
+
+                        // Draw equilibrium points
+                        if (currentSystem === 'spring' || currentSystem === 'gravity') {
+                            ctx.fillStyle = '#4caf50';
+                            ctx.beginPath();
+                            ctx.arc(350, 350, 6, 0, Math.PI * 2);
+                            ctx.fill();
+                            ctx.fillText('Equilibrium', 360, 345);
+                        } else if (currentSystem === 'well') {
+                            // Two equilibria for potential well
+                            ctx.fillStyle = '#4caf50';
+                            ctx.beginPath();
+                            ctx.arc(350 - 50, 350 - 30, 6, 0, Math.PI * 2);
+                            ctx.fill();
+                            ctx.beginPath();
+                            ctx.arc(350 + 50, 350 - 30, 6, 0, Math.PI * 2);
+                            ctx.fill();
+                            ctx.fillText('Stable', 320, 310);
+                            ctx.fillText('Stable', 420, 310);
+
+                            // Unstable equilibrium
+                            ctx.fillStyle = '#ff6b6b';
+                            ctx.beginPath();
+                            ctx.arc(350, 350, 6, 0, Math.PI * 2);
+                            ctx.fill();
+                            ctx.fillText('Unstable', 360, 345);
+                        }
+                    }
+
+                    window.updatePEGraph = function () {
+                        currentSystem = document.getElementById('peSystem').value;
+                        drawPEGraph();
+
+                        const info = document.getElementById('peInfo');
+                        if (currentSystem === 'spring') {
+                            info.innerHTML = '<strong>Spring System:</strong> $$ U = \\frac{1}{2}kx^2 $$<br>• Parabolic curve<br>• Single stable equilibrium at \\(x = 0\\)<br>• Force: \\(F = -kx\\) (proportional to displacement)';
+                        } else if (currentSystem === 'gravity') {
+                            info.innerHTML = '<strong>Gravitational System:</strong> $$ U = mgy $$<br>• Linear relationship<br>• Force: \\(F = -mg\\) (constant)<br>• No equilibrium (always pulls down)';
+                        } else {
+                            info.innerHTML = '<strong>Potential Well:</strong> $$ U = x^4 - 2x^2 $$<br>• Two stable equilibria (valleys)<br>• One unstable equilibrium (peak)<br>• System prefers the valleys';
+                        }
+                        if (window.MathJax) {
+                            MathJax.typesetPromise([info]);
+                        }
+                    };
+
+                    peCanvas.addEventListener('click', (e) => {
+                        const rect = peCanvas.getBoundingClientRect();
+                        const x = e.clientX - rect.left;
+                        const px = (x - 350) / 50;
+
+                        let u, f;
+                        if (currentSystem === 'spring') {
+                            u = 0.5 * px * px;
+                            f = -px;
+                        } else if (currentSystem === 'gravity') {
+                            u = px;
+                            f = -1;
+                        } else {
+                            u = Math.pow(px, 4) - 2 * Math.pow(px, 2);
+                            f = -(4 * Math.pow(px, 3) - 4 * px);
+                        }
+
+                        const info = document.getElementById('peInfo');
+                        info.innerHTML = `<strong>At position \\(x = ${px.toFixed(2)}\\):</strong><br>
                     • Potential Energy: \\(U = ${u.toFixed(3)}\\)<br>
                     • Force: \\(F = ${f.toFixed(3)}\\)<br>
                     • ${f > 0 ? 'Force points right (+x)' : f < 0 ? 'Force points left (-x)' : 'Zero force (equilibrium)'}`;
 
-                if (window.MathJax) {
-                    MathJax.typesetPromise([info]);
-                }
-            });
+                        if (window.MathJax) {
+                            MathJax.typesetPromise([info]);
+                        }
+                    });
 
-            drawPEGraph();
-        }
-    </script>
+                    drawPEGraph();
+                }
+            </script>
 </body>
 
 </html>
-
