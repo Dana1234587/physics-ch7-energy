@@ -301,20 +301,111 @@
 
         @media (max-width: 768px) {
             .header h1 {
-                font-size: 2em;
-            }
-
-            .section-title {
                 font-size: 1.8em;
             }
 
+            .header {
+                padding: 30px 15px;
+            }
+
+            .section-title {
+                font-size: 1.5em;
+            }
+
             .content {
-                padding: 20px;
+                padding: 15px;
             }
 
             .nav-btn {
+                font-size: 0.75em;
+                padding: 8px 12px;
+            }
+
+            /* Spring Simulator Mobile */
+            #springCanvas {
+                width: 100% !important;
+                height: 200px !important;
+            }
+
+            .diagram>div[style*="grid-template-columns: 1fr 1fr"] {
+                grid-template-columns: 1fr !important;
+            }
+
+            .diagram>div[style*="grid-template-columns: repeat(4"] {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+
+            /* All canvases responsive */
+            canvas {
+                max-width: 100%;
+                height: auto !important;
+            }
+
+            /* Images responsive */
+            .diagram img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            /* Tables responsive */
+            table {
                 font-size: 0.85em;
-                padding: 10px 15px;
+            }
+
+            th,
+            td {
+                padding: 8px 5px;
+            }
+
+            /* Formula boxes */
+            .formula {
+                font-size: 0.9em;
+                padding: 15px;
+                overflow-x: auto;
+            }
+
+            /* Examples */
+            .example {
+                padding: 15px;
+            }
+
+            /* Interactive sections */
+            .interactive {
+                padding: 15px;
+            }
+        }
+
+        /* Extra small screens */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 1.4em;
+            }
+
+            .nav {
+                padding: 10px;
+                gap: 5px;
+            }
+
+            .nav-btn {
+                font-size: 0.65em;
+                padding: 6px 10px;
+            }
+
+            .content {
+                padding: 10px;
+            }
+
+            /* Spring simulator stat boxes */
+            .diagram>div[style*="grid-template-columns: repeat(4"] {
+                grid-template-columns: 1fr !important;
+            }
+
+            .diagram>div[style*="font-size: 20px"] {
+                font-size: 16px !important;
             }
         }
     </style>
